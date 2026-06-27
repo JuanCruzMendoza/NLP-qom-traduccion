@@ -7,23 +7,18 @@ Calcula:
   - IAA (Alpha de Krippendorff) para A (sin/con guía), B y C (Accuracy/Fluency).
   - Proporciones de acuerdo (3/3, 2/3, 0/3) y matrices de confusión.
   - Casos de mayor desacuerdo.
-  - Métricas automáticas BLEU (sacreBLEU) y BERTScore (BETO) sobre C.
+  - Métricas automáticas BLEU (sacreBLEU) y BERTScore (mBERT) sobre C.
   - Correlación humano <-> métrica.
 
 Salidas:
-  - resultados/resultados.json   (todos los valores; fuente de verdad)
-  - informe/tablas/*.tex         (fragmentos de tabla booktabs)
-  - informe/figuras/*.pdf|*.png  (figuras)
+  - resultados/resultados.json    (todos los valores; fuente de verdad)
+  - resultados/por_segmento_C.csv (trazabilidad por segmento de C)
 """
 import os, re, json, sys
 import numpy as np
 import pandas as pd
 
 sys.stdout.reconfigure(encoding="utf-8")
-
-import matplotlib
-matplotlib.use("Agg")
-import matplotlib.pyplot as plt
 
 import krippendorff
 import sacrebleu
@@ -33,10 +28,7 @@ from scipy import stats
 ROOT = r"C:\Users\Juan Cruz\Desktop\GitHub\activos\temas_NLP_TP"
 DATA = os.path.join(ROOT, "datasets_anotados")
 OUT_JSON_DIR = os.path.join(ROOT, "resultados")
-OUT_TAB = os.path.join(ROOT, "informe", "tablas")
-OUT_FIG = os.path.join(ROOT, "informe", "figuras")
-for d in (OUT_JSON_DIR, OUT_TAB, OUT_FIG):
-    os.makedirs(d, exist_ok=True)
+os.makedirs(OUT_JSON_DIR, exist_ok=True)
 
 F_A_SIN = os.path.join(DATA, "dataset_A_sin_criterio.xlsx")
 F_A_PROP = os.path.join(DATA, "dataset_A_criterio_propio.xlsx")
