@@ -18,9 +18,8 @@ python figuras.py               # figuras del informe
 ## Notas de implementación
 
 - **IAA**: Alpha de Krippendorff (librería `krippendorff`). Escala ordinal para
-  todas las variables; en C (Direct Assessment 0–20) se reporta además `interval`.
-  Matrices de confusión por coincidencia de pares de anotadores.
+  todas las variables. 
 - **BLEU**: sacreBLEU 2.6.0 (corpus, tokenizer `13a`; oración con smoothing `exp`).
-- **BERTScore**: BETO (`dccuchile/bert-base-spanish-wwm-cased`, capa 9, sin
-  reescalado). Descarga pesos de HuggingFace en la primera ejecución.
+- **BERTScore**: mBERT (`bert-base-multilingual-cased`, `lang=es`, reescalado
+  con baseline oficial). Descarga pesos de HuggingFace en la primera ejecución.
 - En Windows, ejecutar con `PYTHONIOENCODING=utf-8` para imprimir el texto qom.
