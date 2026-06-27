@@ -1,0 +1,11 @@
+# Dependencias para reproducir el análisis (scripts/analisis_resultados.py y figuras.py)
+pandas
+openpyxl
+numpy
+scipy
+matplotlib
+krippendorff
+sacrebleu==2.6.0
+bert-score
+torch
+transformers

@@ -1,0 +1,565 @@
+{
+  "A_sin_guia": {
+    "escala": "ordinal (Incorrecta<Parcialmente correcta<Correcta)",
+    "n_items": 15,
+    "n_anotadores": 3,
+    "krippendorff_alpha_ordinal": 0.7943812937361324,
+    "acuerdo": {
+      "n": 15,
+      "unanime_3de3": 10,
+      "mayoritario_2de3": 5,
+      "desacuerdo_0de3": 0,
+      "p_unanime": 0.6666666666666666,
+      "p_mayoritario": 0.3333333333333333,
+      "p_desacuerdo": 0.0
+    },
+    "matriz_confusion_labels": [
+      "Incorrecta",
+      "Parcialmente correcta",
+      "Correcta"
+    ],
+    "matriz_confusion": [
+      [
+        34,
+        8,
+        0
+      ],
+      [
+        8,
+        18,
+        2
+      ],
+      [
+        0,
+        2,
+        18
+      ]
+    ],
+    "casos_mayor_desacuerdo": [
+      {
+        "id": 1,
+        "n_distintas": 2,
+        "spread": 1,
+        "etiquetas": {
+          "Juan I Catania": "Parcialmente correcta",
+          "Juan Cruz Mendoza": "Parcialmente correcta",
+          "Camila": "Incorrecta"
+        },
+        "qom": "huo'o na ipiaxaiac na llalaqpi nache ỹaỹaten ne'ena nnoinaxac na qoỹo",
+        "ref": "están los hijos de los cazadores que conocen los trinos (llantos) de los pájaros",
+        "mt": "tienen hijos cazadores y entonces saben el llanto de los pájaros"
+      },
+      {
+        "id": 63,
+        "n_distintas": 2,
+        "spread": 1,
+        "etiquetas": {
+          "Juan I Catania": "Parcialmente correcta",
+          "Juan Cruz Mendoza": "Incorrecta",
+          "Camila": "Incorrecta"
+        },
+        "qom": "yaqto' ipaquejlec",
+        "ref": "para que cumpla con su deber (de padre),",
+        "mt": "para que se cumpla"
+      },
+      {
+        "id": 75,
+        "n_distintas": 2,
+        "spread": 1,
+        "etiquetas": {
+          "Juan I Catania": "Incorrecta",
+          "Juan Cruz Mendoza": "Parcialmente correcta",
+          "Camila": "Incorrecta"
+        },
+        "qom": "qataq huo'o yi na'aq nache huo'o na ne'etaxat",
+        "ref": "y hay días en que se llena de agua.",
+        "mt": "y a veces a veces hay agua"
+      }
+    ]
+  },
+  "A_con_guia": {
+    "n_items": 15,
+    "n_anotadores": 3,
+    "escala_global": "ordinal (3 niveles)",
+    "escala_dimensiones": "ordinal 1-4",
+    "global": {
+      "krippendorff_alpha_ordinal": 1.0,
+      "acuerdo": {
+        "n": 15,
+        "unanime_3de3": 15,
+        "mayoritario_2de3": 0,
+        "desacuerdo_0de3": 0,
+        "p_unanime": 1.0,
+        "p_mayoritario": 0.0,
+        "p_desacuerdo": 0.0
+      },
+      "matriz_confusion_labels": [
+        "Incorrecta",
+        "Parcialmente correcta",
+        "Correcta"
+      ],
+      "matriz_confusion": [
+        [
+          42,
+          0,
+          0
+        ],
+        [
+          0,
+          30,
+          0
+        ],
+        [
+          0,
+          0,
+          18
+        ]
+      ]
+    },
+    "dimensiones": {
+      "Fidelidad": {
+        "krippendorff_alpha_ordinal": 0.9600397332198098,
+        "acuerdo": {
+          "n": 15,
+          "unanime_3de3": 13,
+          "mayoritario_2de3": 2,
+          "desacuerdo_0de3": 0,
+          "p_unanime": 0.8666666666666667,
+          "p_mayoritario": 0.13333333333333333,
+          "p_desacuerdo": 0.0
+        },
+        "valores_observados": [
+          1,
+          2,
+          3,
+          4
+        ]
+      },
+      "Naturalidad": {
+        "krippendorff_alpha_ordinal": 0.7227060755336618,
+        "acuerdo": {
+          "n": 15,
+          "unanime_3de3": 9,
+          "mayoritario_2de3": 4,
+          "desacuerdo_0de3": 2,
+          "p_unanime": 0.6,
+          "p_mayoritario": 0.26666666666666666,
+          "p_desacuerdo": 0.13333333333333333
+        },
+        "valores_observados": [
+          1,
+          2,
+          3,
+          4
+        ]
+      },
+      "Preservacion": {
+        "krippendorff_alpha_ordinal": 0.7257055288668492,
+        "acuerdo": {
+          "n": 15,
+          "unanime_3de3": 11,
+          "mayoritario_2de3": 3,
+          "desacuerdo_0de3": 1,
+          "p_unanime": 0.7333333333333333,
+          "p_mayoritario": 0.2,
+          "p_desacuerdo": 0.06666666666666667
+        },
+        "valores_observados": [
+          1,
+          2,
+          3,
+          4
+        ]
+      }
+    },
+    "consistencia_regla": {
+      "n": 45,
+      "mismatch": 0,
+      "tasa_mismatch": 0.0
+    }
+  },
+  "B_con_guia": {
+    "n_items": 15,
+    "n_anotadores": 3,
+    "escala_global": "ordinal (3 niveles)",
+    "escala_dimensiones": "ordinal 1-4",
+    "global": {
+      "krippendorff_alpha_ordinal": 0.8367908074279266,
+      "acuerdo": {
+        "n": 15,
+        "unanime_3de3": 12,
+        "mayoritario_2de3": 3,
+        "desacuerdo_0de3": 0,
+        "p_unanime": 0.8,
+        "p_mayoritario": 0.2,
+        "p_desacuerdo": 0.0
+      },
+      "matriz_confusion_labels": [
+        "Incorrecta",
+        "Parcialmente correcta",
+        "Correcta"
+      ],
+      "matriz_confusion": [
+        [
+          20,
+          4,
+          0
+        ],
+        [
+          4,
+          46,
+          2
+        ],
+        [
+          0,
+          2,
+          12
+        ]
+      ]
+    },
+    "dimensiones": {
+      "Fidelidad": {
+        "krippendorff_alpha_ordinal": 0.8902524752055967,
+        "acuerdo": {
+          "n": 15,
+          "unanime_3de3": 10,
+          "mayoritario_2de3": 5,
+          "desacuerdo_0de3": 0,
+          "p_unanime": 0.6666666666666666,
+          "p_mayoritario": 0.3333333333333333,
+          "p_desacuerdo": 0.0
+        },
+        "valores_observados": [
+          1,
+          2,
+          3,
+          4
+        ]
+      },
+      "Naturalidad": {
+        "krippendorff_alpha_ordinal": 0.3086993970714901,
+        "acuerdo": {
+          "n": 15,
+          "unanime_3de3": 13,
+          "mayoritario_2de3": 1,
+          "desacuerdo_0de3": 1,
+          "p_unanime": 0.8666666666666667,
+          "p_mayoritario": 0.06666666666666667,
+          "p_desacuerdo": 0.06666666666666667
+        },
+        "valores_observados": [
+          2,
+          3,
+          4
+        ]
+      },
+      "Preservacion": {
+        "krippendorff_alpha_ordinal": 0.5212979608142216,
+        "acuerdo": {
+          "n": 15,
+          "unanime_3de3": 7,
+          "mayoritario_2de3": 6,
+          "desacuerdo_0de3": 2,
+          "p_unanime": 0.4666666666666667,
+          "p_mayoritario": 0.4,
+          "p_desacuerdo": 0.13333333333333333
+        },
+        "valores_observados": [
+          1,
+          2,
+          3,
+          4
+        ]
+      }
+    },
+    "consistencia_regla": {
+      "n": 45,
+      "mismatch": 1,
+      "tasa_mismatch": 0.022222222222222223
+    }
+  },
+  "comparacion_A": {
+    "alpha_sin_guia": 0.7943812937361324,
+    "alpha_con_guia": 1.0,
+    "delta": 0.20561870626386758
+  },
+  "C_externo": {
+    "escala": "ordinal/continua 0-20 (Direct Assessment, 5 anclas)",
+    "n_items_compartidos": 15,
+    "n_anotadores": 3,
+    "Accuracy": {
+      "krippendorff_alpha_ordinal": 0.932086991960283,
+      "acuerdo_buckets": {
+        "n": 15,
+        "unanime_3de3": 8,
+        "mayoritario_2de3": 7,
+        "desacuerdo_0de3": 0,
+        "p_unanime": 0.5333333333333333,
+        "p_mayoritario": 0.4666666666666667,
+        "p_desacuerdo": 0.0
+      },
+      "p_acuerdo_pm1_ancla": 0.8666666666666667,
+      "matriz_confusion_anclas": [
+        0,
+        5,
+        10,
+        15,
+        20
+      ],
+      "matriz_confusion": [
+        [
+          6,
+          2,
+          0,
+          0,
+          0
+        ],
+        [
+          2,
+          14,
+          4,
+          0,
+          0
+        ],
+        [
+          0,
+          4,
+          12,
+          4,
+          0
+        ],
+        [
+          0,
+          0,
+          4,
+          22,
+          4
+        ],
+        [
+          0,
+          0,
+          0,
+          4,
+          8
+        ]
+      ],
+      "media_global": 10.71111111111111
+    },
+    "Fluency": {
+      "krippendorff_alpha_ordinal": 0.73228349249417,
+      "acuerdo_buckets": {
+        "n": 15,
+        "unanime_3de3": 9,
+        "mayoritario_2de3": 4,
+        "desacuerdo_0de3": 2,
+        "p_unanime": 0.6,
+        "p_mayoritario": 0.26666666666666666,
+        "p_desacuerdo": 0.13333333333333333
+      },
+      "p_acuerdo_pm1_ancla": 0.8,
+      "matriz_confusion_anclas": [
+        0,
+        5,
+        10,
+        15,
+        20
+      ],
+      "matriz_confusion": [
+        [
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          2,
+          1,
+          1
+        ],
+        [
+          0,
+          2,
+          0,
+          5,
+          1
+        ],
+        [
+          0,
+          1,
+          5,
+          10,
+          4
+        ],
+        [
+          0,
+          1,
+          1,
+          4,
+          52
+        ]
+      ],
+      "media_global": 16.955555555555556
+    },
+    "casos_mayor_desacuerdo": [
+      {
+        "id": 130,
+        "rango_acc": 6,
+        "rango_flu": 15,
+        "acc": [
+          15,
+          9,
+          10
+        ],
+        "flu": [
+          20,
+          8,
+          5
+        ],
+        "ref": "que canta a los frutos para que pronto maduren,",
+        "mt": "que canta a los frutos para que cuando más grande,",
+        "qom": "da do'onoxaalec ana ala ỹaqto' pasa'a da ỹi,"
+      },
+      {
+        "id": 81,
+        "rango_acc": 4,
+        "rango_flu": 8,
+        "acc": [
+          8,
+          8,
+          4
+        ],
+        "flu": [
+          10,
+          14,
+          6
+        ],
+        "ref": "porque los qom cuando iban a mariscar, a la mañana se iban al otro lado del río y a la tarde",
+        "mt": "porque cuando la gente baja, se va al otro lado de la tierra por la mañana, por la tarde y por la tarde",
+        "qom": "cha'aye na qom da ne'epe ñi qoml'ec nache taitague da le'ego da nte'eta qataq 'avit qataq"
+      },
+      {
+        "id": 112,
+        "rango_acc": 6,
+        "rango_flu": 7,
+        "acc": [
+          0,
+          4,
+          6
+        ],
+        "flu": [
+          15,
+          8,
+          15
+        ],
+        "ref": "Ventilar las camas y los catres.",
+        "mt": "Eliminación de cano y cama.",
+        "qom": "Qaichixoq ca nacanec qataq ca mala'."
+      }
+    ]
+  },
+  "metricas": {
+    "n_segmentos_unicos": 120,
+    "n_evaluados": 120,
+    "n_excluidos_vacios": 0,
+    "BLEU": {
+      "corpus_bleu": 28.81398329621375,
+      "signature": "nrefs:1|case:mixed|eff:no|tok:13a|smooth:exp|version:2.6.0",
+      "sent_bleu_media": 45.316126425109864,
+      "sent_bleu_mediana": 37.69556380170885,
+      "sent_bleu_p_cero": 0.025,
+      "smoothing": "exp",
+      "tokenizer": "13a",
+      "sacrebleu_version": "2.6.0"
+    },
+    "BERTScore": {
+      "modelo": "dccuchile/bert-base-spanish-wwm-cased (capa 9)",
+      "F1_media": 0.8507083654403687,
+      "F1_mediana": 0.842787504196167,
+      "P_media": 0.8629180788993835,
+      "R_media": 0.840056836605072,
+      "rescale_with_baseline": false
+    }
+  },
+  "correlacion": {
+    "todos_unicos": {
+      "BLEU": {
+        "Accuracy": {
+          "pearson_r": 0.6904910129484728,
+          "pearson_p": 2.657763318856064e-18,
+          "n": 120
+        },
+        "Fluency": {
+          "pearson_r": 0.3137470206626402,
+          "pearson_p": 0.00048393758185541567,
+          "n": 120
+        },
+        "Overall": {
+          "pearson_r": 0.6191311683521055,
+          "pearson_p": 4.79782730735171e-14,
+          "n": 120
+        }
+      },
+      "BERTScore_F1": {
+        "Accuracy": {
+          "pearson_r": 0.79849666917397,
+          "pearson_p": 8.976195434142698e-28,
+          "n": 120
+        },
+        "Fluency": {
+          "pearson_r": 0.45822266398135664,
+          "pearson_p": 1.420161255421306e-07,
+          "n": 120
+        },
+        "Overall": {
+          "pearson_r": 0.7564333809034338,
+          "pearson_p": 1.687951904656185e-23,
+          "n": 120
+        }
+      }
+    },
+    "solo_compartidos_n15": {
+      "BLEU": {
+        "Accuracy": {
+          "pearson_r": 0.6149908566974186,
+          "pearson_p": 0.014687556911651828,
+          "n": 15
+        },
+        "Fluency": {
+          "pearson_r": 0.17493960509778844,
+          "pearson_p": 0.5328917960789853,
+          "n": 15
+        },
+        "Overall": {
+          "pearson_r": 0.4864988472610582,
+          "pearson_p": 0.06592365499202463,
+          "n": 15
+        }
+      },
+      "BERTScore_F1": {
+        "Accuracy": {
+          "pearson_r": 0.8100489391686782,
+          "pearson_p": 0.00025125240871184425,
+          "n": 15
+        },
+        "Fluency": {
+          "pearson_r": 0.42008520853851383,
+          "pearson_p": 0.11899763714183394,
+          "n": 15
+        },
+        "Overall": {
+          "pearson_r": 0.723794689309055,
+          "pearson_p": 0.0022838831206331836,
+          "n": 15
+        }
+      }
+    }
+  },
+  "timing_crudo_C": {
+    "Tiempo en minutos Anotador1:": "0.71005787037037",
+    "Tiempo en minutos Anotador2:": "19:27:00",
+    "Tiempo en minutos Anotador3:": "1 day, 0:34:00"
+  }
+}

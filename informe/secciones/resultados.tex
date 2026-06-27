@@ -1,0 +1,188 @@
+\section{Resultados}
+\label{sec:resultados}
+
+Reportamos primero el acuerdo entre anotadores (IAA), luego
+las métricas automáticas y, por último, su comparación con la evaluación humana.
+El IAA se calculó con el Alpha de Krippendorff \citep{krippendorff2018}
+(implementación de la librería \texttt{krippendorff} de Python). Las matrices de
+confusión se construyeron como matrices de coincidencia agregando los tres pares
+de anotadores de cada ítem. Todos los links a las anotaciones se incluyen en el
+Apéndice~\ref{ap:anotaciones}.
+
+\subsection{Acuerdo entre anotadores}
+\label{sec:res-iaa}
+
+\paragraph{Dataset A, sin criterio definido}
+
+La evaluación libre en tres niveles se trató como ordinal
+(Incorrecta${<}$Parcialmente correcta${<}$Correcta). El acuerdo fue bueno
+($\alpha=0{,}79$): 10 de 15 segmentos con acuerdo unánime (67\%) y 5 con acuerdo
+mayoritario (33\%), sin casos de desacuerdo total (Tabla~\ref{tab:iaa}). 
+
+El desacuerdo casi siempre ocurre entre niveles adyacentes: en la matriz de confusión
+(Fig.~\ref{fig:confusion}a) todos los pares en desacuerdo son del tipo 
+Incorrecta\,/\,Parcialmente correcta o Parcialmente correcta\,/\,Correcta.
+
+\paragraph{Dataset A, con criterio propio}
+
+Al volver a anotar A con el criterio propio, el acuerdo fue total
+($\alpha=1{,}00$ ordinal en la etiqueta global, unanimidad en los 15 segmentos). Por dimensión (escala ordinal 1--4;
+Tabla~\ref{tab:dims}), el acuerdo fue alto en Fidelidad ($\alpha=0{,}96$) y
+moderado en Naturalidad ($0{,}72$) y Preservación ($0{,}73$). Respecto de la
+versión sin guía, $\alpha$ aumenta de $0{,}79$ a $1{,}00$. Cabe señalar que esto podría 
+ser un sobreajuste, dado que la guía A fue usada para desarrollar el propio criterio.
+
+\paragraph{Dataset B, con criterio propio}
+
+Sobre un conjunto no empleado en el diseño de la guía, el acuerdo global fue alto
+($\alpha=0{,}84$; 12/15 unánimes). Por dimensión, Fidelidad mantiene un acuerdo
+elevado ($0{,}89$), mientras que Naturalidad y Preservación bajan ($0{,}31$ y
+$0{,}52$). 
+
+El bajo valor de Naturalidad coincide con un acuerdo observado alto
+(13/15 unánimes) pero escasa varianza (puntajes casi siempre 3--4): al ser elevado
+el acuerdo esperado por azar, $\alpha$ baja.
+
+\paragraph{Dataset C, con criterio externo}
+
+La guía del Grupo 5 emplea dos dimensiones (Precisión y Fluidez) en una escala continua 0--20 (Direct
+Assessment, con cinco rangos), que tratamos como ordinal. El IAA se calculó sobre
+los 15 segmentos anotados por los tres evaluadores. 
+
+La Precisión muestra acuerdo alto ($\alpha=0{,}93$) y la Fluidez, moderado ($\alpha=0{,}73$). Para las
+proporciones de acuerdo y la confusión redondeamos cada puntaje al rango más
+cercano $\{0,5,10,15,20\}$: en Precisión, 8/15 unánimes y 7/15 mayoritarios. 
+En Fluidez, 9/15 unánimes, 4 mayoritarios y 2 en desacuerdo total. 
+
+\begin{table}[t]
+\centering
+\small
+\begin{tabular}{lccccc}
+\toprule
+Conjunto (global) & Escala & $\alpha$ & 3/3 & 2/3 & 0/3 \\
+\midrule
+A sin guía       & ordinal & 0{,}79 & 67\% & 33\% & 0\% \\
+A con guía       & ordinal & 1{,}00 & 100\% & 0\% & 0\% \\
+B con guía       & ordinal & 0{,}84 & 80\% & 20\% & 0\% \\
+C -- Precisión   & ordinal & 0{,}93 & 53\% & 47\% & 0\% \\
+C -- Fluidez     & ordinal & 0{,}73 & 60\% & 27\% & 13\% \\
+\bottomrule
+\end{tabular}
+\caption{IAA (Alpha de Krippendorff) y proporciones de acuerdo con $N=15$ en todos los casos. En C,
+$\alpha$ se computa sobre los puntajes crudos 0--20 y las proporciones sobre los
+valores redondeados a los rangos.}
+\label{tab:iaa}
+\end{table}
+
+\begin{table}[t]
+\centering
+\small
+\begin{tabular}{lcccc}
+\toprule
+ & \multicolumn{2}{c}{A (con guía)} & \multicolumn{2}{c}{B} \\
+\cmidrule(lr){2-3}\cmidrule(lr){4-5}
+Dimensión & $\alpha$ & 3/3 & $\alpha$ & 3/3 \\
+\midrule
+Fidelidad    & 0{,}96 & 87\% & 0{,}89 & 67\% \\
+Naturalidad  & 0{,}72 & 60\% & 0{,}31 & 87\% \\
+Preservación & 0{,}73 & 73\% & 0{,}52 & 47\% \\
+\bottomrule
+\end{tabular}
+\caption{IAA por dimensión de la guía propia (escala ordinal 1--4, $N=15$).}
+\label{tab:dims}
+\end{table}
+
+\begin{figure*}[!t]
+\centering
+\includegraphics[width=0.92\textwidth]{confusion.pdf}
+\caption{Matrices de confusión por pares de anotadores. Cada ítem aporta sus 3
+pares, contabilizados de forma simétrica (un par que coincide suma 2 en la
+diagonal). (a) Conjunto A sin guía, etiqueta global; (b) y (c) Precisión y
+Fluidez del conjunto C, redondeadas a los rangos 0--20.}
+\label{fig:confusion}
+\end{figure*}
+
+\subsection{Métricas automáticas}
+\label{sec:res-metricas}
+
+Calculamos BLEU con sacreBLEU \citep{post2018call,papineni2002bleu} y BERTScore
+\citep{zhang2020bertscore}. BLEU se reporta a nivel de corpus (tokenización
+\texttt{13a}) y a nivel de oración (con \emph{smoothing} exponencial) para la
+correlación. BERTScore se computó con BETO \citep{canete2020beto}
+(\texttt{bert-base-spanish-wwm-cased}, capa 9). Las
+métricas comparan la salida automática contra la referencia en español sobre los
+120 segmentos únicos del conjunto C (15 compartidos más 35 por anotador). Para
+interpretar los valores absolutos estimamos un baseline por azar, re-emparejando
+cada salida con una referencia aleatoria (media de cinco permutaciones), y
+reescalamos como $(\text{real}-\text{azar})/(1-\text{azar})$
+(Tabla~\ref{tab:metricas}).
+
+\begin{table}[t]
+\centering
+\small
+\begin{tabular}{lccc}
+\toprule
+Métrica & real & azar & reescalado \\
+\midrule
+BLEU (corpus)        & 28{,}8  & 0{,}3   & 28{,}6 \\
+BERTScore F1 (media) & 0{,}851 & 0{,}586 & 0{,}640 \\
+\bottomrule
+\end{tabular}
+\caption{Métricas automáticas sobre el conjunto C ($N=120$), baseline por azar
+(media de 5 permutaciones de las referencias) y valor reescalado. sacreBLEU 2.6.0
+(\texttt{13a}); BERTScore con BETO (capa 9). BLEU de oración: media 45{,}3 /
+mediana 37{,}7; BERTScore P/R medios: 0{,}863 / 0{,}840.}
+\label{tab:metricas}
+\end{table}
+
+El piso de BLEU es prácticamente nulo ($0{,}3$), por lo que su valor crudo ya es
+interpretable y $28{,}8$ indica señal real. En cambio, el de BERTScore es alto
+($0{,}586$): dos oraciones cualesquiera en español comparten buena parte de la
+representación contextual, de modo que el $0{,}851$ crudo sobreestima la calidad y,
+descontado el baseline, equivale a $0{,}640$. El reescalado es monótono y no altera
+las correlaciones de la Sección~\ref{sec:res-comparacion}.
+
+\subsection{Comparación humana vs.\ automática}
+\label{sec:res-comparacion}
+
+Para cada segmento de C tomamos como ground truth el promedio de los anotadores
+(tres en los segmentos compartidos, uno en el resto) y lo correlacionamos con cada
+métrica mediante el coeficiente de Pearson ($r$). Ambas métricas se correlacionan
+de forma significativa con el juicio humano y, en todos los casos, más con
+Precisión que con Fluidez, lo cual es esperable dado que miden similitud con la
+referencia (Tabla~\ref{tab:corr}, Fig.~\ref{fig:scatter}). 
+
+BERTScore supera a BLEU frente a las tres variables humanas. El patrón se mantiene al restringir el
+análisis a los 15 segmentos compartidos (promediados sobre tres anotadores):
+BERTScore--Precisión $r=0{,}81$ y BLEU--Precisión $r=0{,}61$, mientras que la
+correlación con Fluidez no resulta significativa.
+
+\begin{table}[t]
+\centering
+\small
+\begin{tabular}{lccc}
+\toprule
+Métrica & Precisión & Fluidez & Global \\
+\midrule
+BLEU (oración) & 0{,}69 & 0{,}31 & 0{,}62 \\
+BERTScore F1   & 0{,}80 & 0{,}46 & 0{,}76 \\
+\bottomrule
+\end{tabular}
+\caption{Correlación de Pearson ($r$) entre cada métrica y el juicio humano
+($N=120$; todas con $p<0{,}001$).}
+\label{tab:corr}
+\end{table}
+
+\begin{figure*}[!t]
+\centering
+\includegraphics[width=0.78\textwidth]{scatter.pdf}
+\caption{Métricas automáticas frente al juicio humano de Precisión (conjunto C,
+$N=120$). La recta es el ajuste lineal y $r$ es el coeficiente de Pearson.}
+\label{fig:scatter}
+\end{figure*}
+
+\subsection{Anotaciones}
+\label{sec:res-anotaciones}
+
+Las anotaciones completas de los conjuntos A (sin guía y con guía propia), B y C
+se encuentran en el Apéndice~\ref{ap:anotaciones} (enlaces a las planillas).

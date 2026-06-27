@@ -1,0 +1,58 @@
+% TP Temas de Procesamiento del Lenguaje Natural — NLP Aplicado
+% Grupo 6 — Universidad de Buenos Aires (FCEN, Depto. de Computación)
+% Template ACL. Compilar con: latexmk -pdf main.tex
+%
+% Estado: estructura completa (carátula + títulos). La sección de RESULTADOS
+% está redactada con datos reales; el resto de las secciones son placeholders.
+
+\documentclass[11pt]{article}
+\usepackage{acl}
+
+\usepackage{times}
+\usepackage{latexsym}
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage[spanish,es-noshorthands]{babel}
+\usepackage{microtype}
+\usepackage{graphicx}
+\usepackage{booktabs}
+\usepackage{multirow}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{etoolbox}
+\usepackage{stfloats} % permite ubicar floats de doble columna (figure*) también al pie
+
+\graphicspath{{figuras/}}
+
+\addto\captionsspanish{\renewcommand{\tablename}{Tabla}}
+\AtBeginDocument{\patchcmd{\thebibliography}{References}{Referencias}{}{}}
+
+\title{Evaluación humana y automática de traducción automática qom--español:\\
+acuerdo entre anotadores, criterios de evaluación y métricas}
+
+\author{
+  Juan Ignacio Catania \quad Juan Cruz Mendoza \quad Camila Rodríguez \\
+  Grupo 6 \\
+  Universidad de Buenos Aires - FCEN \\
+  2026
+}
+
+\begin{document}
+\maketitle
+
+\begin{abstract}
+Abstract ...
+\end{abstract}
+
+\input{secciones/introduccion}
+\input{secciones/metodologia}
+\input{secciones/resultados}
+\input{secciones/discusion}
+\input{secciones/conclusiones}
+
+\bibliography{referencias}
+
+\appendix
+\input{secciones/apendices}
+
+\end{document}
