@@ -475,12 +475,12 @@
       "sacrebleu_version": "2.6.0"
     },
     "BERTScore": {
-      "modelo": "dccuchile/bert-base-spanish-wwm-cased (capa 9)",
-      "F1_media": 0.8507083654403687,
-      "F1_mediana": 0.842787504196167,
-      "P_media": 0.8629180788993835,
-      "R_media": 0.840056836605072,
-      "rescale_with_baseline": false
+      "modelo": "bert-base-multilingual-cased (lang=es, reescalado con baseline oficial)",
+      "F1_media": 0.6564629673957825,
+      "F1_mediana": 0.6518845558166504,
+      "P_media": 0.6805163621902466,
+      "R_media": 0.6337230205535889,
+      "rescale_with_baseline": true
     }
   },
   "correlacion": {
@@ -504,18 +504,18 @@
       },
       "BERTScore_F1": {
         "Accuracy": {
-          "pearson_r": 0.79849666917397,
-          "pearson_p": 8.976195434142698e-28,
+          "pearson_r": 0.7810195825173023,
+          "pearson_p": 6.974242238025288e-26,
           "n": 120
         },
         "Fluency": {
-          "pearson_r": 0.45822266398135664,
-          "pearson_p": 1.420161255421306e-07,
+          "pearson_r": 0.4456301164165883,
+          "pearson_p": 3.389197416451161e-07,
           "n": 120
         },
         "Overall": {
-          "pearson_r": 0.7564333809034338,
-          "pearson_p": 1.687951904656185e-23,
+          "pearson_r": 0.7387899118153863,
+          "pearson_p": 5.896337837797898e-22,
           "n": 120
         }
       }
@@ -540,18 +540,18 @@
       },
       "BERTScore_F1": {
         "Accuracy": {
-          "pearson_r": 0.8100489391686782,
-          "pearson_p": 0.00025125240871184425,
+          "pearson_r": 0.8195041775789519,
+          "pearson_p": 0.00018472770674489805,
           "n": 15
         },
         "Fluency": {
-          "pearson_r": 0.42008520853851383,
-          "pearson_p": 0.11899763714183394,
+          "pearson_r": 0.34810410643229184,
+          "pearson_p": 0.20356380261432921,
           "n": 15
         },
         "Overall": {
-          "pearson_r": 0.723794689309055,
-          "pearson_p": 0.0022838831206331836,
+          "pearson_r": 0.6985997525373887,
+          "pearson_p": 0.003764468712145913,
           "n": 15
         }
       }

@@ -32,7 +32,9 @@ moderado en Naturalidad ($0{,}72$) y Preservación ($0{,}73$). Respecto de la
 versión sin guía, $\alpha$ aumenta de $0{,}79$ a $1{,}00$. Cabe señalar que esto podría 
 ser un sobreajuste, dado que la guía A fue usada para desarrollar el propio criterio.
 
+
 \paragraph{Dataset B, con criterio propio}
+
 
 Sobre un conjunto no empleado en el diseño de la guía, el acuerdo global fue alto
 ($\alpha=0{,}84$; 12/15 unánimes). Por dimensión, Fidelidad mantiene un acuerdo
@@ -43,7 +45,9 @@ El bajo valor de Naturalidad coincide con un acuerdo observado alto
 (13/15 unánimes) pero escasa varianza (puntajes casi siempre 3--4): al ser elevado
 el acuerdo esperado por azar, $\alpha$ baja.
 
+
 \paragraph{Dataset C, con criterio externo}
+
 
 La guía del Grupo 5 emplea dos dimensiones (Precisión y Fluidez) en una escala continua 0--20 (Direct
 Assessment, con cinco rangos), que tratamos como ordinal. El IAA se calculó sobre
@@ -106,41 +110,45 @@ Fluidez del conjunto C, redondeadas a los rangos 0--20.}
 \label{sec:res-metricas}
 
 Calculamos BLEU con sacreBLEU \citep{post2018call,papineni2002bleu} y BERTScore
-\citep{zhang2020bertscore}. BLEU se reporta a nivel de corpus (tokenización
-\texttt{13a}) y a nivel de oración (con \emph{smoothing} exponencial) para la
-correlación. BERTScore se computó con BETO \citep{canete2020beto}
-(\texttt{bert-base-spanish-wwm-cased}, capa 9). Las
-métricas comparan la salida automática contra la referencia en español sobre los
-120 segmentos únicos del conjunto C (15 compartidos más 35 por anotador). Para
-interpretar los valores absolutos estimamos un baseline por azar, re-emparejando
-cada salida con una referencia aleatoria (media de cinco permutaciones), y
-reescalamos como $(\text{real}-\text{azar})/(1-\text{azar})$
-(Tabla~\ref{tab:metricas}).
+\citep{zhang2020bertscore}, comparando la salida automática contra la referencia en
+español sobre los 120 segmentos únicos del conjunto C (15 compartidos más 35 por
+anotador). BLEU se computa a nivel de corpus (tokenización \texttt{13a}) y,
+para la correlación, a nivel de oración (con smoothing exponencial);
+BERTScore se reporta como media de los puntajes por oración (no posee variante de
+corpus) y se computó con el modelo multilingüe \texttt{bert-base-multilingual-cased}
+(\texttt{lang=es}), con reescalado oficial respecto de la línea base. La
+Tabla~\ref{tab:metricas} indica el nivel de agregación de cada métrica.
 
 \begin{table}[t]
 \centering
 \small
-\begin{tabular}{lccc}
+\begin{tabular}{llc}
 \toprule
-Métrica & real & azar & reescalado \\
+Métrica & Nivel & Valor \\
 \midrule
-BLEU (corpus)        & 28{,}8  & 0{,}3   & 28{,}6 \\
-BERTScore F1 (media) & 0{,}851 & 0{,}586 & 0{,}640 \\
+BLEU            & corpus            & 28{,}8 \\
+BLEU            & oración (media)   & 45{,}3 \\
+BLEU            & oración (mediana) & 37{,}7 \\
+BERTScore F1        & oración (media) & 0{,}656 \\
+BERTScore Precisión & oración (media) & 0{,}681 \\
+BERTScore Recall    & oración (media) & 0{,}634 \\
 \bottomrule
 \end{tabular}
-\caption{Métricas automáticas sobre el conjunto C ($N=120$), baseline por azar
-(media de 5 permutaciones de las referencias) y valor reescalado. sacreBLEU 2.6.0
-(\texttt{13a}); BERTScore con BETO (capa 9). BLEU de oración: media 45{,}3 /
-mediana 37{,}7; BERTScore P/R medios: 0{,}863 / 0{,}840.}
+\caption{Métricas automáticas sobre el conjunto C ($N=120$), con el nivel de
+agregación de cada una. sacreBLEU 2.6.0 (\texttt{13a}; smoothing exp a nivel
+de oración); BERTScore con el modelo multilingüe (\texttt{bert-base-multilingual-cased})
+y reescalado oficial respecto de la línea base \citep{zhang2020bertscore}.}
 \label{tab:metricas}
 \end{table}
 
-El piso de BLEU es prácticamente nulo ($0{,}3$), por lo que su valor crudo ya es
-interpretable y $28{,}8$ indica señal real. En cambio, el de BERTScore es alto
-($0{,}586$): dos oraciones cualesquiera en español comparten buena parte de la
-representación contextual, de modo que el $0{,}851$ crudo sobreestima la calidad y,
-descontado el baseline, equivale a $0{,}640$. El reescalado es monótono y no altera
-las correlaciones de la Sección~\ref{sec:res-comparacion}.
+Sin reescalado, los valores absolutos de BERTScore no son directamente
+interpretables: por la similitud de base entre oraciones en español, incluso pares
+no relacionados reciben puntajes altos. El reescalado oficial respecto de la línea
+base \citep{zhang2020bertscore} corrige esto ubicando esos pares cerca de 0, y deja
+el F1 medio en $0{,}656$. El valor de BLEU, por su parte, debe leerse en el contexto
+de bajos recursos: los resultados del shared task AmericasNLP 2025
+\citep{degibert2025findings} son el punto de comparación de referencia, que se
+discute en la Sección~\ref{sec:discusion}.
 
 \subsection{Comparación humana vs.\ automática}
 \label{sec:res-comparacion}
@@ -154,7 +162,7 @@ referencia (Tabla~\ref{tab:corr}, Fig.~\ref{fig:scatter}).
 
 BERTScore supera a BLEU frente a las tres variables humanas. El patrón se mantiene al restringir el
 análisis a los 15 segmentos compartidos (promediados sobre tres anotadores):
-BERTScore--Precisión $r=0{,}81$ y BLEU--Precisión $r=0{,}61$, mientras que la
+BERTScore--Precisión $r=0{,}82$ y BLEU--Precisión $r=0{,}61$, mientras que la
 correlación con Fluidez no resulta significativa.
 
 \begin{table}[t]
@@ -164,12 +172,12 @@ correlación con Fluidez no resulta significativa.
 \toprule
 Métrica & Precisión & Fluidez & Global \\
 \midrule
-BLEU (oración) & 0{,}69 & 0{,}31 & 0{,}62 \\
-BERTScore F1   & 0{,}80 & 0{,}46 & 0{,}76 \\
+BLEU (oración)        & 0{,}69 & 0{,}31 & 0{,}62 \\
+BERTScore F1 (oración) & 0{,}78 & 0{,}45 & 0{,}74 \\
 \bottomrule
 \end{tabular}
-\caption{Correlación de Pearson ($r$) entre cada métrica y el juicio humano
-($N=120$; todas con $p<0{,}001$).}
+\caption{Correlación de Pearson ($r$) entre cada métrica (a nivel de oración) y el
+juicio humano ($N=120$).}
 \label{tab:corr}
 \end{table}
 

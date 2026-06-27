@@ -306,18 +306,12 @@ bleu_signature = str(bleu_metric.get_signature())
 valid["sent_bleu"] = [sacrebleu.sentence_bleu(h, [r], smooth_method="exp").score
                       for h, r in zip(hyps, refs)]
 
-print("Calculando BERTScore (BETO)...")
+print("Calculando BERTScore (mBERT, reescalado oficial)...")
 from bert_score import score as bertscore
-BETO = "dccuchile/bert-base-spanish-wwm-cased"
-try:
-    P, R, F1 = bertscore(hyps, refs, model_type=BETO, num_layers=9,
-                         lang="es", rescale_with_baseline=False, verbose=False)
-    bert_model_used = f"{BETO} (capa 9)"
-except Exception as e:
-    print("Fallback a num_layers default:", e)
-    P, R, F1 = bertscore(hyps, refs, model_type=BETO, lang="es",
-                         rescale_with_baseline=False, verbose=False)
-    bert_model_used = f"{BETO} (capa por defecto)"
+MBERT = "bert-base-multilingual-cased"
+P, R, F1 = bertscore(hyps, refs, model_type=MBERT, lang="es",
+                     rescale_with_baseline=True, verbose=False)
+bert_model_used = f"{MBERT} (lang=es, reescalado con baseline oficial)"
 valid["bert_f1"] = F1.numpy()
 valid["bert_p"] = P.numpy()
 valid["bert_r"] = R.numpy()
@@ -341,7 +335,7 @@ results["metricas"] = {
         "F1_mediana": float(np.median(valid["bert_f1"])),
         "P_media": float(valid["bert_p"].mean()),
         "R_media": float(valid["bert_r"].mean()),
-        "rescale_with_baseline": False,
+        "rescale_with_baseline": True,
     },
 }
 

@@ -1,121 +1,121 @@
 id,h_acc,h_flu,h_over,sent_bleu,bert_f1,ref_s,mt_s
-40,12.666666666666666,20.0,16.333333333333332,17.03057835676086,0.8274818,También entre los frutos de los árboles,También hay frutos de árboles
-43,15.0,20.0,17.5,24.840753130578644,0.8411193,se les enseña.,se le enseña
-56,15.0,19.333333333333332,17.166666666666664,24.880469496253564,0.7924304,No hay nada más.,"no hay nada,"
-68,5.666666666666667,17.666666666666668,11.666666666666668,21.444097124017667,0.7268816,"Vos, ser del monte,","Vos, No'ouet,"
-74,18.0,20.0,19.0,39.76353643835254,0.91966987,allí está ese campo,y ahí está ese campo
-81,6.666666666666667,10.0,8.333333333333334,9.429254736980935,0.76456684,"porque los qom cuando iban a mariscar, a la mañana se iban al otro lado del río y a la tarde","porque cuando la gente baja, se va al otro lado de la tierra por la mañana, por la tarde y por la tarde"
-107,4.0,14.0,9.0,2.5447522339119577,0.6808616,"En la naturaleza hay diferentes fuentes de donde podemos obtener el agua. Entre ellas los ríos, arroyos, lagunas, lagos, esteros, charcos. Otra fuente natural es la lluvia, la que puede almacenarse construyendo represas y aljibes. Además el agua de lluvia se filtra por diferentes capas del suelo y se almacena allí formando las napas de aguas subterráneas. Para conseguir esta agua necesitamos hacer perforaciones en el suelo y extraerla de allí con ayuda de bombas o molinos. El agua también se acumula en pequeñas cantidades en algunas plantas, ya sea en tejidos reservantes, o en cavidades como las axilas de hojas.","Los que viven en la tierra son muchos: ríos, granizo, guazuncho, lagunas, lagunas, lagunas y lluvias. La lluvia produce agua en los pozos y en las peñas, y la lluvia baja a la tierra, y a veces se encuentra en el suelo. Por eso, ustedes descansan la tierra."
-112,3.3333333333333335,12.666666666666666,8.0,8.170609724417774,0.7333112,Ventilar las camas y los catres.,Eliminación de cano y cama.
-113,0.6666666666666666,17.0,8.833333333333334,14.991106946711685,0.6694709,Limpiar detrás de muebles y objetos colgados de las paredes.,"No hay mesa, palanganos y cucharones para las paredes."
-114,15.333333333333334,20.0,17.666666666666668,41.16538266387962,0.8974428,"Mover y revisar las cosas amontonadas, lo más frecuentemente posible.",Mover y revisar las cosas amontonadas.
-115,18.333333333333332,20.0,19.166666666666664,63.404662770468576,0.9692909,Tapar las grietas y los agujeros de las paredes y techos.,Tapar las grietas y las brechas de las paredes y techos.
-116,7.666666666666667,12.666666666666666,10.166666666666666,41.374412020518825,0.8314187,"Si el techo es de paja, cambiarlo al menos una vez al año.",Si la parte superior del pasto se cambia al menos una vez al año.
-126,10.0,20.0,15.0,27.516060407455225,0.8462208,Con repelentes.,Fabricar repelente.
-129,17.0,20.0,18.5,25.13293635022765,0.7629139,Entonces viene el pájaro (anunciante) cuyo nombre es crespín,"Entonces viene el pájaro que se llama el crespín,"
-130,11.333333333333334,11.0,11.166666666666668,59.00468726392806,0.831301,"que canta a los frutos para que pronto maduren,","que canta a los frutos para que cuando más grande,"
-3,17.0,20.0,18.5,25.211936184349828,0.87784714,y también saben cuando un pájaro se asusta.,y también saben cuál es el pájaro cuando se asusta.
-5,12.0,20.0,16.0,12.44023474812678,0.7505421,se junta con otros pájaros…,se juntaban los pájaros
-12,0.0,20.0,10.0,15.97357760615681,0.7321705,están rodeando a,está mirando a alguien
+40,12.666666666666666,20.0,16.333333333333332,17.03057835676086,0.6025713,También entre los frutos de los árboles,También hay frutos de árboles
+43,15.0,20.0,17.5,24.840753130578644,0.7205406,se les enseña.,se le enseña
+56,15.0,19.333333333333332,17.166666666666664,24.880469496253564,0.45508683,No hay nada más.,"no hay nada,"
+68,5.666666666666667,17.666666666666668,11.666666666666668,21.444097124017667,0.2636989,"Vos, ser del monte,","Vos, No'ouet,"
+74,18.0,20.0,19.0,39.76353643835254,0.8623214,allí está ese campo,y ahí está ese campo
+81,6.666666666666667,10.0,8.333333333333334,9.429254736980935,0.48496744,"porque los qom cuando iban a mariscar, a la mañana se iban al otro lado del río y a la tarde","porque cuando la gente baja, se va al otro lado de la tierra por la mañana, por la tarde y por la tarde"
+107,4.0,14.0,9.0,2.5447522339119577,0.24564658,"En la naturaleza hay diferentes fuentes de donde podemos obtener el agua. Entre ellas los ríos, arroyos, lagunas, lagos, esteros, charcos. Otra fuente natural es la lluvia, la que puede almacenarse construyendo represas y aljibes. Además el agua de lluvia se filtra por diferentes capas del suelo y se almacena allí formando las napas de aguas subterráneas. Para conseguir esta agua necesitamos hacer perforaciones en el suelo y extraerla de allí con ayuda de bombas o molinos. El agua también se acumula en pequeñas cantidades en algunas plantas, ya sea en tejidos reservantes, o en cavidades como las axilas de hojas.","Los que viven en la tierra son muchos: ríos, granizo, guazuncho, lagunas, lagunas, lagunas y lluvias. La lluvia produce agua en los pozos y en las peñas, y la lluvia baja a la tierra, y a veces se encuentra en el suelo. Por eso, ustedes descansan la tierra."
+112,3.3333333333333335,12.666666666666666,8.0,8.170609724417774,0.47032797,Ventilar las camas y los catres.,Eliminación de cano y cama.
+113,0.6666666666666666,17.0,8.833333333333334,14.991106946711685,0.3380173,Limpiar detrás de muebles y objetos colgados de las paredes.,"No hay mesa, palanganos y cucharones para las paredes."
+114,15.333333333333334,20.0,17.666666666666668,41.16538266387962,0.7712697,"Mover y revisar las cosas amontonadas, lo más frecuentemente posible.",Mover y revisar las cosas amontonadas.
+115,18.333333333333332,20.0,19.166666666666664,63.404662770468576,0.9168561,Tapar las grietas y los agujeros de las paredes y techos.,Tapar las grietas y las brechas de las paredes y techos.
+116,7.666666666666667,12.666666666666666,10.166666666666666,41.374412020518825,0.59914804,"Si el techo es de paja, cambiarlo al menos una vez al año.",Si la parte superior del pasto se cambia al menos una vez al año.
+126,10.0,20.0,15.0,27.516060407455225,0.39838302,Con repelentes.,Fabricar repelente.
+129,17.0,20.0,18.5,25.13293635022765,0.64484674,Entonces viene el pájaro (anunciante) cuyo nombre es crespín,"Entonces viene el pájaro que se llama el crespín,"
+130,11.333333333333334,11.0,11.166666666666668,59.00468726392806,0.6340557,"que canta a los frutos para que pronto maduren,","que canta a los frutos para que cuando más grande,"
+3,17.0,20.0,18.5,25.211936184349828,0.7260337,y también saben cuando un pájaro se asusta.,y también saben cuál es el pájaro cuando se asusta.
+5,12.0,20.0,16.0,12.44023474812678,0.54914135,se junta con otros pájaros…,se juntaban los pájaros
+12,0.0,20.0,10.0,15.97357760615681,0.4744305,están rodeando a,está mirando a alguien
 15,20.0,20.0,20.0,100.00000000000004,1.0,o a cualquier animal.,o a cualquier animal.
-17,0.0,20.0,10.0,6.4005180884547785,0.6343169,A veces hay un pajarito chiquitito que los hace asustar (a los pájaros),A veces cuando a un niño se le dice que
-23,15.0,20.0,17.5,22.957488466614326,0.8377184,Y cuando se van las avispas,Y cuando los parásitos se van
-24,20.0,20.0,20.0,100.00000000000004,1.0,entonces tenés que hacharlo.,entonces tenés que hacharlo.
-26,20.0,18.0,19.0,77.88007830714052,0.91153455,"y cuando se termina,",y cuando se termina
-37,10.0,20.0,15.0,24.840753130578644,0.75857043,y tampoco mi arco,y del arco
-45,20.0,20.0,20.0,84.08964152537145,0.961721,"“Vos, jovencito, cuando vas al monte","Vos, jovencito, cuando vas al monte"
-48,20.0,20.0,20.0,27.05411345269698,0.9665775,entonces tenés que traerlos para que los comamos,entonces tenés que traerlo para que lo comamos
-49,15.0,18.0,16.5,35.83129187641353,0.82516676,"y los que no se pueden comer no hay que recogerlos, hay que dejarlos",y las que no se pueden comer no tenés que agarrarlas para que estén allí
-53,20.0,20.0,20.0,84.64817248906144,0.9454695,"compadécete de mí en este día,",compadécete de mí en este día
-58,17.0,20.0,18.5,54.44460596606694,0.84177953,"te compadezcas de mí en este día,",compadécete de mí en este día
-59,18.0,20.0,19.0,46.30777161991026,0.83432543,que cures a mi sobrina,sana a mi sobrina
-60,20.0,20.0,20.0,100.00000000000004,1.0000001,porque su marido se fue.,porque su marido se fue.
-67,20.0,20.0,20.0,100.00000000000004,0.99999994,compadécete de mí.,compadécete de mí.
-70,20.0,20.0,20.0,100.00000000000004,1.0,para que,para que
-71,17.0,20.0,18.5,0.0,0.6057401,esté bien,Sería bueno que
-93,17.0,20.0,18.5,43.29996812708629,0.86173624,"Pero (aunque) la gente toba no conocía los números, (se sabe que) eran muchas las vacas","Pero la gente toba no conocía los números, pero eran muchas las vacas"
-97,20.0,20.0,20.0,71.65313105737896,0.8447745,cruzado el río.,cruzado el río
-102,8.0,15.0,11.5,38.2031233569512,0.78582776,"Pero ya pasaron los años y ahora el monte de tacuara es grande, tupido,",Pero ya pasaron los años y ahora la grandeza de la tapa
-119,10.0,10.0,10.0,4.805913088871721,0.75667554,"Evitar que los animales duerman dentro de la casa. Si los perros, gatos o gallinas duermen dentro de la casa, las chinches y sus crías tienen más alimento (sangre) disponible y se pueden reproducir más. En cambio, con menos alimento a su alcance, las vinchucas no pueden desarrollar grandes poblaciones en las viviendas.","Cuida del animal que duerme en la casa. Cuando el perro, la guazuncha, se duerme en la casa, la chinche y su cría tienen comida en la sangre; pero no hay comida, la chinche y su cría pueden seguir su camino."
-121,12.0,10.0,11.0,12.238302874102398,0.73242116,"Es fundamental revisar detrás de los cuadros, afiches, almanaques, etc. para descartar la presencia de estos insectos. También es necesario inspeccionar las paredes y rincones en busca de rastros (manchas de materia fecal, huevos y pelechos), ya que éstos nos dan una clara señal de que hay vinchucas en la vivienda.","Fíjate en los cuadros, afiches, almanaques, etc. Fíjate en las paredes de las vinchucas. Si hay vinchucas, se sabe que hay vinchucas."
-127,8.0,20.0,14.0,3.3864985683445354,0.7345851,Con telas mosquiteras instaladas en puertas y ventanas.,Se puede utilizar letrinas para cerrar la puerta o la ventana.
-131,20.0,20.0,20.0,100.00000000000004,1.0,"noche y día, noche y día.","noche y día, noche y día."
-132,17.0,20.0,18.5,9.103526405546068,0.81860834,"Nunca duerme, no come, no bebe, no descansa","No puede dormir, no puede comer, no debe tomar, no debe descansar"
-136,20.0,20.0,20.0,100.00000000000004,1.0000001,El pájaro está en algún lugar.,El pájaro está en algún lugar.
-137,20.0,20.0,20.0,100.00000000000004,1.0000001,Él espera el siguiente año.,Él espera el siguiente año.
-138,18.0,20.0,19.0,32.46679154750989,0.87507397,Y nuevamente aparece para cantar.,Y otra vez aparece para cantar
-143,10.0,20.0,15.0,28.319415510892387,0.8207629,El canto del crespín hace que los frutos maduren.,El canto del crespín significa cantar.
-144,18.0,20.0,19.0,19.43309443637607,0.8979449,"Cuando estoy dentro de ese monte,","Cuando estoy en el monte,"
-147,19.0,20.0,19.5,10.552670315936318,0.8437955,¿Por qué ese árbol parece tumbarse?,¿Por qué parece que este árbol se ha caído?
-149,17.0,20.0,18.5,49.76093899250716,0.8869104,Cuando ese árbol hace así,Cuando ese árbol así
-150,15.0,20.0,17.5,36.337289265247364,0.8174934,es porque a vos te desconoce el dueño del monte.,te molesta el dueño del monte.
+17,0.0,20.0,10.0,6.4005180884547785,0.24684733,A veces hay un pajarito chiquitito que los hace asustar (a los pájaros),A veces cuando a un niño se le dice que
+23,15.0,20.0,17.5,22.957488466614326,0.53790087,Y cuando se van las avispas,Y cuando los parásitos se van
+24,20.0,20.0,20.0,100.00000000000004,0.9999997,entonces tenés que hacharlo.,entonces tenés que hacharlo.
+26,20.0,18.0,19.0,77.88007830714052,0.8287168,"y cuando se termina,",y cuando se termina
+37,10.0,20.0,15.0,24.840753130578644,0.41375893,y tampoco mi arco,y del arco
+45,20.0,20.0,20.0,84.08964152537145,0.897922,"“Vos, jovencito, cuando vas al monte","Vos, jovencito, cuando vas al monte"
+48,20.0,20.0,20.0,27.05411345269698,0.92857426,entonces tenés que traerlos para que los comamos,entonces tenés que traerlo para que lo comamos
+49,15.0,18.0,16.5,35.83129187641353,0.54469675,"y los que no se pueden comer no hay que recogerlos, hay que dejarlos",y las que no se pueden comer no tenés que agarrarlas para que estén allí
+53,20.0,20.0,20.0,84.64817248906144,0.85804677,"compadécete de mí en este día,",compadécete de mí en este día
+58,17.0,20.0,18.5,54.44460596606694,0.5920295,"te compadezcas de mí en este día,",compadécete de mí en este día
+59,18.0,20.0,19.0,46.30777161991026,0.47839794,que cures a mi sobrina,sana a mi sobrina
+60,20.0,20.0,20.0,100.00000000000004,1.0000006,porque su marido se fue.,porque su marido se fue.
+67,20.0,20.0,20.0,100.00000000000004,1.0000006,compadécete de mí.,compadécete de mí.
+70,20.0,20.0,20.0,100.00000000000004,0.9999998,para que,para que
+71,17.0,20.0,18.5,0.0,0.33310372,esté bien,Sería bueno que
+93,17.0,20.0,18.5,43.29996812708629,0.75563645,"Pero (aunque) la gente toba no conocía los números, (se sabe que) eran muchas las vacas","Pero la gente toba no conocía los números, pero eran muchas las vacas"
+97,20.0,20.0,20.0,71.65313105737896,0.77144814,cruzado el río.,cruzado el río
+102,8.0,15.0,11.5,38.2031233569512,0.50150484,"Pero ya pasaron los años y ahora el monte de tacuara es grande, tupido,",Pero ya pasaron los años y ahora la grandeza de la tapa
+119,10.0,10.0,10.0,4.805913088871721,0.41050872,"Evitar que los animales duerman dentro de la casa. Si los perros, gatos o gallinas duermen dentro de la casa, las chinches y sus crías tienen más alimento (sangre) disponible y se pueden reproducir más. En cambio, con menos alimento a su alcance, las vinchucas no pueden desarrollar grandes poblaciones en las viviendas.","Cuida del animal que duerme en la casa. Cuando el perro, la guazuncha, se duerme en la casa, la chinche y su cría tienen comida en la sangre; pero no hay comida, la chinche y su cría pueden seguir su camino."
+121,12.0,10.0,11.0,12.238302874102398,0.32507515,"Es fundamental revisar detrás de los cuadros, afiches, almanaques, etc. para descartar la presencia de estos insectos. También es necesario inspeccionar las paredes y rincones en busca de rastros (manchas de materia fecal, huevos y pelechos), ya que éstos nos dan una clara señal de que hay vinchucas en la vivienda.","Fíjate en los cuadros, afiches, almanaques, etc. Fíjate en las paredes de las vinchucas. Si hay vinchucas, se sabe que hay vinchucas."
+127,8.0,20.0,14.0,3.3864985683445354,0.38818845,Con telas mosquiteras instaladas en puertas y ventanas.,Se puede utilizar letrinas para cerrar la puerta o la ventana.
+131,20.0,20.0,20.0,100.00000000000004,1.0000004,"noche y día, noche y día.","noche y día, noche y día."
+132,17.0,20.0,18.5,9.103526405546068,0.4295276,"Nunca duerme, no come, no bebe, no descansa","No puede dormir, no puede comer, no debe tomar, no debe descansar"
+136,20.0,20.0,20.0,100.00000000000004,1.0000006,El pájaro está en algún lugar.,El pájaro está en algún lugar.
+137,20.0,20.0,20.0,100.00000000000004,1.0000004,Él espera el siguiente año.,Él espera el siguiente año.
+138,18.0,20.0,19.0,32.46679154750989,0.76408106,Y nuevamente aparece para cantar.,Y otra vez aparece para cantar
+143,10.0,20.0,15.0,28.319415510892387,0.4682697,El canto del crespín hace que los frutos maduren.,El canto del crespín significa cantar.
+144,18.0,20.0,19.0,19.43309443637607,0.80448496,"Cuando estoy dentro de ese monte,","Cuando estoy en el monte,"
+147,19.0,20.0,19.5,10.552670315936318,0.6904513,¿Por qué ese árbol parece tumbarse?,¿Por qué parece que este árbol se ha caído?
+149,17.0,20.0,18.5,49.76093899250716,0.76042867,Cuando ese árbol hace así,Cuando ese árbol así
+150,15.0,20.0,17.5,36.337289265247364,0.6589223,es porque a vos te desconoce el dueño del monte.,te molesta el dueño del monte.
 6,20.0,20.0,20.0,100.00000000000004,1.0,Cuando hay muchos pájaros,Cuando hay muchos pájaros
-7,0.0,18.0,9.0,0.0,0.64055187,algo está sucediendo.,a veces
-8,20.0,20.0,20.0,100.00000000000004,1.0,En el idioma de los doqshe se dice,En el idioma de los doqshe se dice
-10,20.0,20.0,20.0,100.00000000000004,1.0,entonces hay que ir despacio,entonces hay que ir despacio
+7,0.0,18.0,9.0,0.0,0.16075781,algo está sucediendo.,a veces
+8,20.0,20.0,20.0,100.00000000000004,0.9999998,En el idioma de los doqshe se dice,En el idioma de los doqshe se dice
+10,20.0,20.0,20.0,100.00000000000004,1.0000004,entonces hay que ir despacio,entonces hay que ir despacio
 11,20.0,20.0,20.0,100.00000000000004,1.0,porque esos pájaros,porque esos pájaros
-13,17.0,20.0,18.5,45.13864405503391,0.93737084,o a un puma,o un puma
-18,16.0,20.0,18.0,59.460355750136046,0.96114206,"Si encontrás abejas,","Cuando encontrás abejas,"
-19,17.0,20.0,18.5,39.76353643835254,0.79413533,"hay que hacer fuego,",entonces tenés que hacer fuego
-21,20.0,20.0,20.0,84.64817248906144,0.94825655,"no tenés que golpear el árbol,",no tenés que golpear el árbol
-22,11.0,13.0,12.0,36.55362607114356,0.82586735,"tenés que hacer humo, tenés que hacer que vaya para abajo (el humo).","tenés que hacer humo, tenés que hacer humo"
-25,12.0,20.0,16.0,51.84341074271373,0.87465674,"Y si lo hachás, entonces hay que hacer un hueco grande y entonces sacar el panal","Y si la cortás, entonces hay que hacer un hueco grande y entonces hay que arrancar la presa"
-28,12.0,18.0,15.0,6.971729121692201,0.7115212,entonces cerrá bien (el hueco).,entonces tenés que taparlas.
-30,20.0,20.0,20.0,77.88007830714052,0.9419812,"entonces tenés que guardarla,",entonces tenés que guardarla
-32,20.0,20.0,20.0,100.00000000000004,1.0000001,cuando llega,cuando llega
-36,7.0,20.0,13.5,21.3643503198117,0.7383468,o tocar mi arma,era mi arma de fuego
-46,16.0,20.0,18.0,72.59795291154772,0.89457273,a buscar los frutos de los árboles,te vas a buscar los frutos de los árboles
-52,11.0,20.0,15.5,45.48019047027906,0.89604414,pero... nosotros los conocemos,pero... nos conocemos
-61,20.0,20.0,20.0,66.87403049764218,0.9618577,Pero sería lindo que después,pero sería lindo que después
-65,20.0,20.0,20.0,81.87307530779823,0.8998705,y ayude a su esposa.,y ayude a su esposa
-73,14.0,20.0,17.0,46.30777161991026,0.80119973,que está al otro lado,y al otro lado
-77,9.0,16.0,12.5,37.1880042464665,0.7957812,"es muy grande, pero está en la Provincia Formosa.","amplio, pero está en la laguna."
-80,8.0,20.0,14.0,6.150343144231885,0.7532526,También dicen que es otro lugar para ellos cuando no existían los doqshe,"y decía que era otro lugar, porque no entendíamos la lengua de los doqshepi."
-84,10.0,18.0,14.0,39.01126486653949,0.79369974,"y ese (lugar) Paso de las Vacas,",y ese (lugar) Huacagueta
-94,11.0,20.0,15.5,42.311785416105785,0.9302899,"Entonces trasladaron esas vacas hacia el otro lado del río, las llevaron a Formosa","Entonces se trasladó esa vaca hacia el otro lado del río, se fue a Formosa"
-100,20.0,18.0,19.0,100.00000000000004,1.0000001,porque está de ese (lugar) Lapelole del que estuve hablando,porque está de ese (lugar) Lapelole del que estuve hablando
-101,16.0,18.0,17.0,53.52614285189905,0.88429534,está ese lugar que se llama Huataxat y ese (lugar)…,ese lugar que se llama Huataxat y ese
-106,11.0,20.0,15.5,9.688464563433238,0.76495,"le han comido el corazón,",se comió su corazón
-109,4.0,12.0,8.0,3.833629932054125,0.6925343,"Después que éstas se cargan, el agua cae en forma de lluvia, granizo o nieve.  En las zonas bajas o hundidas como el Chaco, esta agua forma lagos, lagunas, esteros, o bien entra hasta debajo del suelo. Los bosques, montes y las plantas en general ayudan a que el agua se quede en el suelo y no se vaya para otras zonas. Así el suelo puede absorber mejor. Por eso la tala de bosques o su reemplazo por cultivos como la soja disminuye mucho la cantidad de agua retenida, ocasionando sequías en algunos lugares y grandes inundaciones en otros donde el agua no es absorbida.","En el valle o en el fondo, como en el Chaco, el agua forma lagunas, cañadas, cañadas o profundas. El águila grande, el monte y sus pavos son como el agua de la tierra, y no pueden moverse por el pozo. Así, la tierra está sobre el terreno fértil. Por eso se ha convertido en un pozo."
-117,9.0,20.0,14.5,28.89649116814955,0.74167895,"Construir los corrales con alambre o palo a pique; si no es posible, cambiar la enramada al menos una vez al año.","El arca debe ser hecha con alambre o madera sola, y debe ser cambiada al menos una vez al año."
-120,10.0,18.0,14.0,34.913181128656284,0.7969537,"Poner los gallineros y corrales lo más lejos posible de la vivienda, para que no entren en la casa las vinchucas y crías que estén instaladas en estos lugares.","Haz un nido de guazuncho y cuero lejos de la vivienda, para que no entren en la vivienda las vinchucas y sus crías."
-128,15.0,18.0,16.5,6.252035029916671,0.7688212,Protegiendo a los enfermos de dengue y fiebre amarilla con estas medidas para frenar la propagación de la enfermedad.,"Cuida de las personas infectadas con dengue y FA, para que no se transmita esta enfermedad."
-135,10.0,18.0,14.0,12.46291637182236,0.7639558,Porque ha cumplido su deber de cantar a los frutos del árbol.,"Cuando cantan cantos de alabanza a los frutos de los árboles,"
-145,11.0,20.0,15.5,6.431267393706692,0.7417111,escucho el ruido de un árbol que parece tumbarse.,y parece que el árbol se cae.
-151,20.0,20.0,20.0,100.00000000000004,1.0000001,"Cuando vos escuches eso,","Cuando vos escuches eso,"
-154,14.0,20.0,17.0,43.29820146406896,0.9069425,No ando porque sí por tu lugar;,No ando por tu lugar;
-0,10.0,20.0,15.0,0.0,0.63950485,Entonces entre los qom,Y entonces esa gente
-2,19.0,20.0,19.5,68.72892787909726,0.9163392,"sí, saben cuándo un pájaro está cantando (llorando)","sí, saben cuándo un pájaro está cantando"
-4,20.0,20.0,20.0,55.03212081491043,0.89627695,Cuando un pájaro…,Cuando un pájaro
-14,20.0,20.0,20.0,59.460355750136046,0.8877027,a una víbora,a una víbora.
-20,18.0,20.0,19.0,46.30777161991026,0.8334921,"hay que hacer humo,",tenés que hacer humo
+13,17.0,20.0,18.5,45.13864405503391,0.8642102,o a un puma,o un puma
+18,16.0,20.0,18.0,59.460355750136046,0.8447283,"Si encontrás abejas,","Cuando encontrás abejas,"
+19,17.0,20.0,18.5,39.76353643835254,0.53594315,"hay que hacer fuego,",entonces tenés que hacer fuego
+21,20.0,20.0,20.0,84.64817248906144,0.8763315,"no tenés que golpear el árbol,",no tenés que golpear el árbol
+22,11.0,13.0,12.0,36.55362607114356,0.6234902,"tenés que hacer humo, tenés que hacer que vaya para abajo (el humo).","tenés que hacer humo, tenés que hacer humo"
+25,12.0,20.0,16.0,51.84341074271373,0.7247541,"Y si lo hachás, entonces hay que hacer un hueco grande y entonces sacar el panal","Y si la cortás, entonces hay que hacer un hueco grande y entonces hay que arrancar la presa"
+28,12.0,18.0,15.0,6.971729121692201,0.32591003,entonces cerrá bien (el hueco).,entonces tenés que taparlas.
+30,20.0,20.0,20.0,77.88007830714052,0.86698776,"entonces tenés que guardarla,",entonces tenés que guardarla
+32,20.0,20.0,20.0,100.00000000000004,1.0000004,cuando llega,cuando llega
+36,7.0,20.0,13.5,21.3643503198117,0.41136333,o tocar mi arma,era mi arma de fuego
+46,16.0,20.0,18.0,72.59795291154772,0.7768298,a buscar los frutos de los árboles,te vas a buscar los frutos de los árboles
+52,11.0,20.0,15.5,45.48019047027906,0.81830406,pero... nosotros los conocemos,pero... nos conocemos
+61,20.0,20.0,20.0,66.87403049764218,0.93504304,Pero sería lindo que después,pero sería lindo que después
+65,20.0,20.0,20.0,81.87307530779823,0.7882174,y ayude a su esposa.,y ayude a su esposa
+73,14.0,20.0,17.0,46.30777161991026,0.6145215,que está al otro lado,y al otro lado
+77,9.0,16.0,12.5,37.1880042464665,0.6156489,"es muy grande, pero está en la Provincia Formosa.","amplio, pero está en la laguna."
+80,8.0,20.0,14.0,6.150343144231885,0.47045884,También dicen que es otro lugar para ellos cuando no existían los doqshe,"y decía que era otro lugar, porque no entendíamos la lengua de los doqshepi."
+84,10.0,18.0,14.0,39.01126486653949,0.5046897,"y ese (lugar) Paso de las Vacas,",y ese (lugar) Huacagueta
+94,11.0,20.0,15.5,42.311785416105785,0.71973765,"Entonces trasladaron esas vacas hacia el otro lado del río, las llevaron a Formosa","Entonces se trasladó esa vaca hacia el otro lado del río, se fue a Formosa"
+100,20.0,18.0,19.0,100.00000000000004,1.0,porque está de ese (lugar) Lapelole del que estuve hablando,porque está de ese (lugar) Lapelole del que estuve hablando
+101,16.0,18.0,17.0,53.52614285189905,0.7138575,está ese lugar que se llama Huataxat y ese (lugar)…,ese lugar que se llama Huataxat y ese
+106,11.0,20.0,15.5,9.688464563433238,0.6164338,"le han comido el corazón,",se comió su corazón
+109,4.0,12.0,8.0,3.833629932054125,0.30628607,"Después que éstas se cargan, el agua cae en forma de lluvia, granizo o nieve.  En las zonas bajas o hundidas como el Chaco, esta agua forma lagos, lagunas, esteros, o bien entra hasta debajo del suelo. Los bosques, montes y las plantas en general ayudan a que el agua se quede en el suelo y no se vaya para otras zonas. Así el suelo puede absorber mejor. Por eso la tala de bosques o su reemplazo por cultivos como la soja disminuye mucho la cantidad de agua retenida, ocasionando sequías en algunos lugares y grandes inundaciones en otros donde el agua no es absorbida.","En el valle o en el fondo, como en el Chaco, el agua forma lagunas, cañadas, cañadas o profundas. El águila grande, el monte y sus pavos son como el agua de la tierra, y no pueden moverse por el pozo. Así, la tierra está sobre el terreno fértil. Por eso se ha convertido en un pozo."
+117,9.0,20.0,14.5,28.89649116814955,0.41289,"Construir los corrales con alambre o palo a pique; si no es posible, cambiar la enramada al menos una vez al año.","El arca debe ser hecha con alambre o madera sola, y debe ser cambiada al menos una vez al año."
+120,10.0,18.0,14.0,34.913181128656284,0.55913967,"Poner los gallineros y corrales lo más lejos posible de la vivienda, para que no entren en la casa las vinchucas y crías que estén instaladas en estos lugares.","Haz un nido de guazuncho y cuero lejos de la vivienda, para que no entren en la vivienda las vinchucas y sus crías."
+128,15.0,18.0,16.5,6.252035029916671,0.4071868,Protegiendo a los enfermos de dengue y fiebre amarilla con estas medidas para frenar la propagación de la enfermedad.,"Cuida de las personas infectadas con dengue y FA, para que no se transmita esta enfermedad."
+135,10.0,18.0,14.0,12.46291637182236,0.30444828,Porque ha cumplido su deber de cantar a los frutos del árbol.,"Cuando cantan cantos de alabanza a los frutos de los árboles,"
+145,11.0,20.0,15.5,6.431267393706692,0.40911064,escucho el ruido de un árbol que parece tumbarse.,y parece que el árbol se cae.
+151,20.0,20.0,20.0,100.00000000000004,1.0,"Cuando vos escuches eso,","Cuando vos escuches eso,"
+154,14.0,20.0,17.0,43.29820146406896,0.8295574,No ando porque sí por tu lugar;,No ando por tu lugar;
+0,10.0,20.0,15.0,0.0,-0.026293883,Entonces entre los qom,Y entonces esa gente
+2,19.0,20.0,19.5,68.72892787909726,0.8049843,"sí, saben cuándo un pájaro está cantando (llorando)","sí, saben cuándo un pájaro está cantando"
+4,20.0,20.0,20.0,55.03212081491043,0.81328726,Cuando un pájaro…,Cuando un pájaro
+14,20.0,20.0,20.0,59.460355750136046,0.78548235,a una víbora,a una víbora.
+20,18.0,20.0,19.0,46.30777161991026,0.53569835,"hay que hacer humo,",tenés que hacer humo
 27,20.0,20.0,20.0,100.00000000000004,1.0,cuando se termina esa miel,cuando se termina esa miel
 29,20.0,20.0,20.0,100.00000000000004,1.0,"Y si queda algo de cera,","Y si queda algo de cera,"
-31,5.0,8.0,6.5,36.409302398068725,0.7934256,tenés que traerla porque sirve para antorcha.,tenés que traerla porque nuestra víbora
-33,20.0,20.0,20.0,100.00000000000004,1.0,el tiempo,el tiempo
-39,10.0,20.0,15.0,19.070828081828378,0.81855047,Consejos para la muerte reciente de un familiar,Los consejos para la muerte de una persona toba
-42,15.0,20.0,17.5,20.547995616750768,0.91829604,Entonces al joven y a la jovencita,Entonces el joven y la jovencita
+31,5.0,8.0,6.5,36.409302398068725,0.5389002,tenés que traerla porque sirve para antorcha.,tenés que traerla porque nuestra víbora
+33,20.0,20.0,20.0,100.00000000000004,0.9999995,el tiempo,el tiempo
+39,10.0,20.0,15.0,19.070828081828378,0.62885803,Consejos para la muerte reciente de un familiar,Los consejos para la muerte de una persona toba
+42,15.0,20.0,17.5,20.547995616750768,0.8395833,Entonces al joven y a la jovencita,Entonces el joven y la jovencita
 51,20.0,20.0,20.0,100.00000000000004,1.0,no todos son buenos para que comamos,no todos son buenos para que comamos
-54,20.0,20.0,20.0,71.65313105737896,0.88839453,"a mi sobrino,",a mi sobrino
-55,20.0,20.0,20.0,74.20884818558928,0.9421302,cura a mi hermano para que esté sano.,sana a mi hermano para que esté sano
-57,19.0,20.0,19.5,27.516060407455225,0.83987445,sería lindo que,Sería bueno que
-69,20.0,20.0,20.0,9.22364410103253,0.7716149,"compadécete de este niñito pequeño, que nació recién,",Compadécete de este niño recién nacido
-72,10.0,5.0,7.5,23.356898886410004,0.7791808,Pero ese río que cruza el río grande,"Pero ese río parece grande, ese río"
-79,5.0,5.0,5.0,25.271148634948986,0.7842742,y para los qom ese era un lugar de marisca.,y esa gente toba es un lugar de marisca
-82,2.0,15.0,8.5,20.80779087745999,0.7750091,"así nomás, sin canoa igual pasaban al otro lado, llevaban su arma y a veces llevaban","y en la barca, los que iban al otro lado llevaban su arma y llevaban"
-86,15.0,20.0,17.5,7.733712583165139,0.7955012,"cuando la gente que peleaba entre sí,",cuando esa gente peleaba
-88,10.0,20.0,15.0,15.343192954978532,0.8073158,Entonces cambian de lugar a las vacas. No se sabe de dónde vienen... si vienen de Sáenz Peña,entonces cambian de lugar ese toro... de donde viene... de Sáenz Peña
+54,20.0,20.0,20.0,71.65313105737896,0.73621553,"a mi sobrino,",a mi sobrino
+55,20.0,20.0,20.0,74.20884818558928,0.70857084,cura a mi hermano para que esté sano.,sana a mi hermano para que esté sano
+57,19.0,20.0,19.5,27.516060407455225,0.36816537,sería lindo que,Sería bueno que
+69,20.0,20.0,20.0,9.22364410103253,0.4842978,"compadécete de este niñito pequeño, que nació recién,",Compadécete de este niño recién nacido
+72,10.0,5.0,7.5,23.356898886410004,0.47771314,Pero ese río que cruza el río grande,"Pero ese río parece grande, ese río"
+79,5.0,5.0,5.0,25.271148634948986,0.36558056,y para los qom ese era un lugar de marisca.,y esa gente toba es un lugar de marisca
+82,2.0,15.0,8.5,20.80779087745999,0.5110599,"así nomás, sin canoa igual pasaban al otro lado, llevaban su arma y a veces llevaban","y en la barca, los que iban al otro lado llevaban su arma y llevaban"
+86,15.0,20.0,17.5,7.733712583165139,0.53101844,"cuando la gente que peleaba entre sí,",cuando esa gente peleaba
+88,10.0,20.0,15.0,15.343192954978532,0.45891216,Entonces cambian de lugar a las vacas. No se sabe de dónde vienen... si vienen de Sáenz Peña,entonces cambian de lugar ese toro... de donde viene... de Sáenz Peña
 90,20.0,20.0,20.0,100.00000000000004,1.0,¿De dónde viene esa gente?,¿De dónde viene esa gente?
-91,20.0,20.0,20.0,89.483931681437,0.96340495,"Y esas vacas eran muchas, eran aproximadamente 2.000 vacas","esas vacas eran muchas, eran aproximadamente 2.000 vacas"
-96,0.0,17.0,8.5,4.885299005952271,0.6973946,y pasaron por El Estero que se llama Paso de las Vacas ya que antes esas vacas habían,y mi abuelo se llamaba El Estero Llegueta porque había una vaca
-98,20.0,20.0,20.0,100.00000000000004,1.0000001,Y entonces esa gente,Y entonces esa gente
-103,20.0,20.0,20.0,100.00000000000004,0.99999994,parece el rugido de un tigre,parece el rugido de un tigre
-118,6.0,20.0,13.0,0.9101733406989965,0.7162403,"Con estas medidas se reduce la cantidad de lugares en los que se pueden refugiar las vinchucas y sus crías. Por más que lleguen de otro lado, si las chinches no tienen dónde esconderse, no se van a instalar en la casa.","De esta manera, la vinchuca y su cría no tienen nada que comer."
-125,0.0,5.0,2.5,3.233864428135133,0.64252025,Usando mosquiteros para cubrir camas; se puede mejorar su eficacia impregnándolos con un insecticida piretroide como la permetrina. También se pueden impregnar con insecticida las cortinas en puertas y ventanas.,"Fabricar corrales para cubrir las camas. Derramar la guazuncha de perrina, permitido en las corrales y las puertas de las puertas."
-133,0.0,0.0,0.0,0.5657759656209536,0.4813242,hasta que muere (hasta donde llega su vida).,"miró hacia atrás, hacia atrás, hacia atrás, hacia atrás, hacia atrás, hacia atrás, hacia atrás, hacia atrás, hacia atrás, hacia atrás, hacia atrás, hacia atrás, hacia atrás, hacia atrás, hacia atrás, hacia atrás, hacia atrás, hacia atrás, hacia atrás, hacia atrás, hacia atrás."
-146,19.0,20.0,19.5,48.892302243490086,0.9745294,Entonces le pregunto a mi padre:,Entonces le pregunté a mi padre:
-148,20.0,20.0,20.0,20.801195378010608,0.8595258,Entonces me dice mi padre:,Entonces mi padre dijo:
-152,20.0,20.0,20.0,9.78090152232118,0.8438113,"entonces le decís esto: Vos, que habitás en este monte,","entonces le dices: Tú que eres de ese monte,"
-155,20.0,20.0,20.0,100.00000000000004,1.0,estoy buscando algo para cazar en este día.,estoy buscando algo para cazar en este día.
-156,18.0,20.0,19.0,8.9730240870212,0.70980465,Solamente te pido que me tengas compasión,Solamente tenés que compadecerme
-157,0.0,20.0,10.0,10.682175159905853,0.69285625,proveyéndome de algo hoy.,gracias a aquel día.
+91,20.0,20.0,20.0,89.483931681437,0.92721415,"Y esas vacas eran muchas, eran aproximadamente 2.000 vacas","esas vacas eran muchas, eran aproximadamente 2.000 vacas"
+96,0.0,17.0,8.5,4.885299005952271,0.28538427,y pasaron por El Estero que se llama Paso de las Vacas ya que antes esas vacas habían,y mi abuelo se llamaba El Estero Llegueta porque había una vaca
+98,20.0,20.0,20.0,100.00000000000004,0.9999998,Y entonces esa gente,Y entonces esa gente
+103,20.0,20.0,20.0,100.00000000000004,0.9999998,parece el rugido de un tigre,parece el rugido de un tigre
+118,6.0,20.0,13.0,0.9101733406989965,0.27428362,"Con estas medidas se reduce la cantidad de lugares en los que se pueden refugiar las vinchucas y sus crías. Por más que lleguen de otro lado, si las chinches no tienen dónde esconderse, no se van a instalar en la casa.","De esta manera, la vinchuca y su cría no tienen nada que comer."
+125,0.0,5.0,2.5,3.233864428135133,0.23630664,Usando mosquiteros para cubrir camas; se puede mejorar su eficacia impregnándolos con un insecticida piretroide como la permetrina. También se pueden impregnar con insecticida las cortinas en puertas y ventanas.,"Fabricar corrales para cubrir las camas. Derramar la guazuncha de perrina, permitido en las corrales y las puertas de las puertas."
+133,0.0,0.0,0.0,0.5657759656209536,-0.08601389,hasta que muere (hasta donde llega su vida).,"miró hacia atrás, hacia atrás, hacia atrás, hacia atrás, hacia atrás, hacia atrás, hacia atrás, hacia atrás, hacia atrás, hacia atrás, hacia atrás, hacia atrás, hacia atrás, hacia atrás, hacia atrás, hacia atrás, hacia atrás, hacia atrás, hacia atrás, hacia atrás, hacia atrás."
+146,19.0,20.0,19.5,48.892302243490086,0.96109086,Entonces le pregunto a mi padre:,Entonces le pregunté a mi padre:
+148,20.0,20.0,20.0,20.801195378010608,0.76254755,Entonces me dice mi padre:,Entonces mi padre dijo:
+152,20.0,20.0,20.0,9.78090152232118,0.5704631,"entonces le decís esto: Vos, que habitás en este monte,","entonces le dices: Tú que eres de ese monte,"
+155,20.0,20.0,20.0,100.00000000000004,1.0000004,estoy buscando algo para cazar en este día.,estoy buscando algo para cazar en este día.
+156,18.0,20.0,19.0,8.9730240870212,0.38379112,Solamente te pido que me tengas compasión,Solamente tenés que compadecerme
+157,0.0,20.0,10.0,10.682175159905853,0.31575346,proveyéndome de algo hoy.,gracias a aquel día.
