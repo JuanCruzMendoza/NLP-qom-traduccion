@@ -25,7 +25,6 @@ import sacrebleu
 from scipy import stats
 
 # ----------------------------------------------------------------------------- paths
-# raíz del repo = carpeta padre de scripts/ (reproducible en cualquier clon)
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 DATA = os.path.join(ROOT, "datasets_anotados")
 OUT_JSON_DIR = os.path.join(ROOT, "resultados")
