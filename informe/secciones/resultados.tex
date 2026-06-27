@@ -145,10 +145,16 @@ Sin reescalado, los valores absolutos de BERTScore no son directamente
 interpretables: por la similitud de base entre oraciones en español, incluso pares
 no relacionados reciben puntajes altos. El reescalado oficial respecto de la línea
 base \citep{zhang2020bertscore} corrige esto ubicando esos pares cerca de 0, y deja
-el F1 medio en $0{,}656$. El valor de BLEU, por su parte, debe leerse en el contexto
-de bajos recursos: los resultados del shared task AmericasNLP 2025
-\citep{degibert2025findings} son el punto de comparación de referencia, que se
-discute en la Sección~\ref{sec:discusion}.
+el F1 en $0{,}656$. 
+
+El valor de BLEU debe leerse en el contexto de bajos
+recursos: como referencia de literatura, en el shared task AmericasNLP 2025
+\citep{degibert2025findings} el mejor sistema de traducción hacia el español
+promedia BLEU $\approx 7{,}2$ sobre 13 lenguas indígenas (allí la métrica principal
+es chrF++). El qom no integra ese conjunto y los segmentos de C son breves, por lo que la comparación es 
+solo orientativa: el BLEU de $28{,}8$
+refleja en buena medida esa diferencia de tarea (lengua, dirección y longitud de
+los segmentos) más que necesariamente un sistema superior.
 
 \subsection{Comparación humana vs.\ automática}
 \label{sec:res-comparacion}
