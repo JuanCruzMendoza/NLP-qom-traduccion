@@ -25,7 +25,8 @@ import sacrebleu
 from scipy import stats
 
 # ----------------------------------------------------------------------------- paths
-ROOT = r"C:\Users\Juan Cruz\Desktop\GitHub\activos\temas_NLP_TP"
+# raíz del repo = carpeta padre de scripts/ (reproducible en cualquier clon)
+ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 DATA = os.path.join(ROOT, "datasets_anotados")
 OUT_JSON_DIR = os.path.join(ROOT, "resultados")
 os.makedirs(OUT_JSON_DIR, exist_ok=True)

@@ -7,7 +7,7 @@ import matplotlib
 matplotlib.use("Agg")
 import matplotlib.pyplot as plt
 
-ROOT = r"C:\Users\Juan Cruz\Desktop\GitHub\activos\temas_NLP_TP"
+ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))  # raíz del repo
 RES = os.path.join(ROOT, "resultados")
 FIG = os.path.join(ROOT, "informe", "figuras")
 os.makedirs(FIG, exist_ok=True)
