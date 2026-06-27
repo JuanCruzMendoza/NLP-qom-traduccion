@@ -1,4 +1,52 @@
 \section{Introducción}
 \label{sec:introduccion}
-% TODO: Cuál es el problema, por qué es importante, qué hicieron y en qué se
-% diferencia de trabajos previos. (Consigna, punto 7 — Introducción.)
+
+% --- Cuál es el problema ---
+La traducción automática (\emph{Machine Translation}, MT) se ocupa de crear
+sistemas que traduzcan texto de un idioma a otro. Hoy en día, estos sistemas
+usan sobre todo redes neuronales entrenadas con muchísimo texto en varios idiomas a
+la vez \citep{jurafsky2026mt}. El problema es que \emph{evaluar} qué tan bien
+funcionan estos sistemas sigue siendo difícil \citep{ebrahimi2023findings}, sobre
+todo en lenguas con pocos recursos. En estos casos faltan datos, faltan recursos
+lingüísticos y faltan personas que puedan juzgar si una traducción es buena o no.
+
+El qom (también llamado toba) es una lengua indígena de la familia Guaycurú que
+hablan alrededor de 80.000 personas en Argentina, sobre todo en el Gran Chaco
+\citep{ticona2025indigenous}. Para una computadora es una lengua difícil de
+trabajar: hay pocos recursos digitales, la ortografía cambia según la comunidad,
+la morfología es muy compleja, la sintaxis es bastante distinta a la del español y
+casi no existen corpus paralelos. Hace poco se creó QomL'aqtaqa, el primer corpus
+paralelo qom--español en un formato que se puede usar computacionalmente
+\citep{cotik2026qomlaqtaqa}. Gracias a esto, por primera vez se puede estudiar de
+forma sistemática la calidad de la traducción automática entre estos dos idiomas.
+
+% --- Por qué es importante ---
+Evaluar la MT en este contexto importa por dos motivos. Primero, las métricas
+automáticas más usadas (BLEU, chrF, COMET, etc.)
+\citep{papineni2002bleu,popovic2015chrf,rei2020comet} se pensaron y se probaron
+casi siempre con lenguas que tienen muchos recursos, así que no está claro que
+funcionen bien en una lengua como el qom, que tiene una morfología rica y pocos
+recursos \citep{degibert2025findings}. Segundo, la evaluación humana, que suele
+tomarse como referencia, es cara, subjetiva y depende de que haya hablantes o
+expertos disponibles. Por eso es importante entender cuánto se ponen de acuerdo
+los anotadores y por qué a veces no lo hacen.
+
+% --- Qué hicieron ---
+En este trabajo: (i)~hicimos una evaluación humana de traducciones automáticas
+qom--español, poniéndole a cada segmento una categoría de calidad; (ii)~medimos
+cuánto se pusieron de acuerdo los anotadores (\emph{Inter-Annotator Agreement},
+IAA) con el Alpha de Krippendorff y miramos los casos donde más diferían;
+(iii)~armamos y fuimos mejorando una guía de anotación, inspirada en marcos como
+MQM \citep{lommel2014mqm} y en la evaluación directa \citep{graham2013da},
+buscando que fuera simple y rápida de usar; (iv)~calculamos dos métricas
+automáticas y (v)~comparamos los juicios humanos con esas métricas, viendo cuánto
+se parecen y qué tipos de errores detecta cada una.
+
+% --- En qué se diferencia de trabajos previos ---
+A diferencia de otros trabajos que se enfocan en armar o evaluar sistemas de MT
+para lenguas indígenas usando solo métricas automáticas
+\citep{ebrahimi2023findings,degibert2025findings}, a nosotros nos interesa el
+\emph{proceso de evaluación} en sí. Comparamos evaluación humana y automática
+sobre los mismos datos, vemos cómo el diseño de la guía de anotación afecta el
+acuerdo entre anotadores y documentamos todo el proceso con \emph{data statements}
+\citep{bender2018data}.

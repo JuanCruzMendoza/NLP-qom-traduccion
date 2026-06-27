@@ -12,7 +12,7 @@
 \usepackage{latexsym}
 \usepackage[T1]{fontenc}
 \usepackage[utf8]{inputenc}
-\usepackage[spanish,es-noshorthands]{babel}
+% \usepackage[spanish,es-noshorthands]{babel} % requiere texlive-langspanish; comentado para compilar sin él
 \usepackage{microtype}
 \usepackage{graphicx}
 \usepackage{booktabs}
@@ -24,7 +24,9 @@
 
 \graphicspath{{figuras/}}
 
-\addto\captionsspanish{\renewcommand{\tablename}{Tabla}}
+% Sin babel, fijamos los rótulos en español directamente:
+\renewcommand{\tablename}{Tabla}
+\renewcommand{\figurename}{Figura}
 \AtBeginDocument{\patchcmd{\thebibliography}{References}{Referencias}{}{}}
 
 \title{Evaluación humana y automática de traducción automática qom--español:\\
@@ -41,7 +43,18 @@ acuerdo entre anotadores, criterios de evaluación y métricas}
 \maketitle
 
 \begin{abstract}
-Abstract ...
+Estudiamos cómo evaluar la calidad de un sistema de traducción automática (MT)
+qom--español sobre el corpus QomL'aqtaqa, una lengua indígena de bajos recursos.
+Tres anotadores hispanohablantes evaluamos las traducciones y medimos el acuerdo
+entre anotadores (IAA) con el Alpha de Krippendorff. Diseñamos una guía de
+anotación simple inspirada en MQM (tres dimensiones en escala 1--4 más una etiqueta
+global) y la comparamos con una anotación inicial sin guía: el acuerdo sobre el
+conjunto~A sube de $\alpha=0{,}79$ a $\alpha=1{,}00$, aunque ese aumento debe
+leerse con cautela porque A se usó para construir la guía. Finalmente calculamos
+BLEU y BERTScore sobre el conjunto~C y las comparamos con el juicio humano: ambas
+correlacionan de forma significativa, y BERTScore más que BLEU, sobre todo con la
+dimensión de precisión. Discutimos las limitaciones de evaluar una traducción
+qom--español únicamente con hablantes de español.
 \end{abstract}
 
 \input{secciones/introduccion}

@@ -7,7 +7,7 @@ Calcula:
   - IAA (Alpha de Krippendorff) para A (sin/con guía), B y C (Accuracy/Fluency).
   - Proporciones de acuerdo (3/3, 2/3, 0/3) y matrices de confusión.
   - Casos de mayor desacuerdo.
-  - Métricas automáticas BLEU (sacreBLEU) y BERTScore (mBERT) sobre C.
+  - Métricas automáticas BLEU (sacreBLEU) y BERTScore (mBERT, reescalado) sobre C.
   - Correlación humano <-> métrica.
 
 Salidas:
