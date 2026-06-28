@@ -1,3 +1,30 @@
 \section{Conclusiones}
 \label{sec:conclusiones}
-% TODO: Conclusiones del trabajo.
+
+En este trabajo analizamos la evaluación humana y automática de traducciones
+qom--español sobre el corpus QomL'aqtaqa. A partir de la anotación del conjunto~A,
+el cálculo de IAA y el diseño posterior de una guía propia, vimos que explicitar
+criterios ayuda a mejorar la consistencia entre anotadores. El salto de acuerdo en
+el conjunto~A y el buen desempeño en el conjunto~B muestran que una guía breve,
+con pocas dimensiones y reglas claras, puede ser suficiente para volver más
+estable una tarea que sin criterio previo era bastante ambigua.
+
+También observamos que no todas las dimensiones son igual de fáciles de evaluar.
+Fidelidad fue la más consistente entre anotadores, mientras que Naturalidad y
+Preservación generaron más dudas y desacuerdos. Esto sugiere que, incluso con una
+guía, sigue habiendo aspectos de la calidad que dependen bastante de la
+interpretación de quien anota.
+
+En cuanto a las métricas automáticas, BLEU y BERTScore mostraron correlación con el
+juicio humano, especialmente con la dimensión de Precisión, y BERTScore obtuvo la
+mejor correspondencia general. Sin embargo, ambas métricas tienen limitaciones:
+comparan contra una referencia en español y no pueden reemplazar por completo una
+evaluación humana, menos todavía en una lengua de bajos recursos como el qom.
+
+Finalmente, una conclusión importante es que evaluar traducciones qom$\rightarrow$
+español solamente con hablantes monolingües de español permite avanzar, pero deja
+afuera parte del problema. Para juzgar mejor la fidelidad al original haría falta
+sumar conocimiento de la lengua fuente o colaboración con hablantes y especialistas.
+En ese sentido, este trabajo funciona más como una primera aproximación ordenada al
+problema que como una evaluación definitiva, y deja abiertas varias líneas para
+mejorar tanto la guía como la validación de las métricas en futuros trabajos.

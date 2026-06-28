@@ -1,7 +1,73 @@
-\section{Discusión}
+\section{Discusion}
 \label{sec:discusion}
-% TODO: Principales dificultades; limitaciones de las métricas; recomendaciones
-% para futuras evaluaciones. Discutir que el conjunto A se usó al elaborar y
-% refinar la guía: implicancias para interpretar el cambio de IAA entre la
-% versión sin guía y con guía; ¿el acuerdo sobre A refleja la calidad general de
-% la guía? (Punto 7 — Discusión; preguntas del punto 6.)
+
+Uno de los resultados más claros del trabajo es que contar con una guía ayuda a
+anotar de manera más consistente. En el conjunto~A, el acuerdo pasa de
+$\alpha=0{,}79$ sin criterio a $\alpha=1{,}00$ con criterio propio. Sin embargo,
+ese aumento hay que interpretarlo con cautela. El conjunto~A no fue solamente un
+conjunto de evaluación: también fue el material con el que fuimos detectando
+ambigüedades y afinando la guía. En ese sentido, parte del mejor acuerdo puede
+deberse a que el criterio quedó, al menos en alguna medida, ajustado a ese mismo
+conjunto. Por eso, el acuerdo perfecto sobre A no demuestra por sí solo que la
+guía sea igualmente robusta en datos nuevos.
+
+Creemos que el conjunto~B da una imagen más realista de la calidad general del
+criterio. Allí el acuerdo global sigue siendo alto ($\alpha=0{,}84$), pero ya no
+perfecto, y aparecen con más claridad las dimensiones donde la guía deja margen a
+la interpretación, sobre todo Naturalidad y Preservación. Esto sugiere que la
+guía fue útil para ordenar la tarea, pero no elimina del todo la subjetividad,
+especialmente cuando la traducción es entendible pero suena poco natural, o cuando
+hay que decidir si cierto elemento cultural o léxico importante realmente fue
+preservado.
+
+Las principales dificultades durante la anotación estuvieron bastante alineadas con
+los casos de desacuerdo. En la evaluación inicial de A, muchos desacuerdos no
+parecen surgir de errores completamente distintos, sino de la duda entre dos
+categorías vecinas, por ejemplo entre \emph{Incorrecta} y \emph{Parcialmente
+correcta}. Eso se ve también en la matriz de confusión. Un problema frecuente fue
+decidir cuánto penalizar traducciones que preservaban parte del contenido pero
+perdían matices importantes, agregaban algo no presente en la referencia o
+resultaban poco naturales en español. La guía propia ayudó a reducir esa
+ambigüedad porque separó la evaluación en dimensiones y le dio prioridad explícita
+a la Fidelidad.
+
+Al mirar las métricas automáticas, los resultados son razonables pero también
+muestran límites claros. Tanto BLEU como BERTScore correlacionan con el juicio
+humano, y BERTScore lo hace mejor, en particular con Precisión. Esto era esperable
+porque BERTScore tolera mejor reformulaciones y sinónimos. Aun así, ninguna de las
+métricas reemplaza una evaluación humana cuidada. Las dos comparan la salida del
+sistema con una referencia en español y, por lo tanto, capturan mejor la cercanía
+con esa referencia que problemas más finos del qom original. En otras palabras,
+una traducción puede sonar razonable e incluso parecer cercana a la referencia,
+pero igual estar omitiendo o alterando parte del significado del segmento fuente.
+
+Esto se conecta con una limitación importante de nuestro trabajo: quienes anotamos
+somos hablantes de español sin conocimiento de qom. En la práctica, no evaluamos
+directamente la traducción qom$\rightarrow$español, sino la cercanía entre la
+salida automática y una traducción de referencia al español. Eso alcanza para
+detectar muchos problemas, pero no todos. Una persona monolingüe en español puede
+identificar falta de fluidez, rarezas gramaticales, partes omitidas frente a la
+referencia y algunos errores semánticos evidentes, pero no puede asegurar por sí
+sola si el contenido del qom fue realmente preservado. Para una evaluación más
+fuerte haría falta, idealmente, participación de hablantes de qom o de personas
+con formación lingüística específica sobre la lengua, además de más de una
+referencia cuando sea posible.
+
+También hay que ser prudentes al interpretar la comparación entre evaluación humana
+y automática en el conjunto~C. Aunque las correlaciones son significativas, el
+conjunto sigue siendo chico y en la mayor parte de los segmentos el juicio humano
+proviene de un solo anotador. Eso introduce ruido y hace que las conclusiones sean
+más exploratorias que definitivas. Aun así, el patrón general parece estable:
+las métricas reflejan mejor la dimensión de Precisión que la de Fluidez, lo cual
+tiene sentido dado que ambas se apoyan en la similitud con la referencia y no en un
+juicio independiente de naturalidad.
+
+Como recomendación para futuras evaluaciones, nos parece que convendría probar la
+guía en un conjunto adicional completamente nuevo, incorporar revisión de
+hablantes o especialistas en qom y registrar de forma más sistemática ejemplos
+típicos de error para cada categoría. También sería útil comparar BLEU y
+BERTScore con alguna métrica adicional orientada a lenguas de bajos recursos, como
+chrF o COMET, para ver si capturan mejor ciertos errores. En conjunto, el trabajo
+nos deja la impresión de que evaluar traducción en este escenario requiere combinar
+guías simples, análisis cualitativo y métricas automáticas, sin confiar demasiado
+en una sola fuente de evidencia.
