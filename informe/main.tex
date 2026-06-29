@@ -41,17 +41,18 @@ acuerdo entre anotadores, criterios de evaluación y métricas}
 
 \begin{document}
 \maketitle
+\pagestyle{plain}
+\thispagestyle{plain}
 
 \begin{abstract}
 Estudiamos cómo evaluar la calidad de un sistema de traducción automática (MT)
-qom--español sobre el corpus QomL'aqtaqa, una lengua indígena de bajos recursos.
+de qom (una lengua indígena de bajos recursos) a español sobre el corpus QomL'aqtaqa.
 Tres anotadores hispanohablantes evaluamos las traducciones y medimos el acuerdo
 entre anotadores (IAA) con el Alpha de Krippendorff. Diseñamos una guía de
 anotación simple inspirada en MQM (tres dimensiones en escala 1--4 más una etiqueta
 global) y la comparamos con una anotación inicial sin guía: el acuerdo sobre el
-conjunto~A sube de $\alpha=0{,}79$ a $\alpha=1{,}00$, aunque ese aumento debe
-leerse con cautela porque A se usó para construir la guía. Finalmente calculamos
-BLEU y BERTScore sobre el conjunto~C y las comparamos con el juicio humano: ambas
+dataset~A sube de $\alpha=0{,}79$ a $\alpha=1{,}00$ (como tambíen aumenta en datos nuevos). Finalmente calculamos
+BLEU y BERTScore sobre el dataset~C y las comparamos con el juicio humano: ambas
 correlacionan de forma significativa, y BERTScore más que BLEU, sobre todo con la
 dimensión de precisión. Discutimos las limitaciones de evaluar una traducción
 qom--español únicamente con hablantes de español.

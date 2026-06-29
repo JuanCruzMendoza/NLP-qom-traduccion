@@ -23,8 +23,7 @@ preservado.
 Las principales dificultades durante la anotación estuvieron bastante alineadas con
 los casos de desacuerdo. En la evaluación inicial de A, muchos desacuerdos no
 parecen surgir de errores completamente distintos, sino de la duda entre dos
-categorías vecinas, por ejemplo entre \emph{Incorrecta} y \emph{Parcialmente
-correcta}. Eso se ve también en la matriz de confusión. Un problema frecuente fue
+categorías vecinas. Un problema frecuente fue
 decidir cuánto penalizar traducciones que preservaban parte del contenido pero
 perdían matices importantes, agregaban algo no presente en la referencia o
 resultaban poco naturales en español. La guía propia ayudó a reducir esa
@@ -61,13 +60,3 @@ más exploratorias que definitivas. Aun así, el patrón general parece estable:
 las métricas reflejan mejor la dimensión de Precisión que la de Fluidez, lo cual
 tiene sentido dado que ambas se apoyan en la similitud con la referencia y no en un
 juicio independiente de naturalidad.
-
-Como recomendación para futuras evaluaciones, nos parece que convendría probar la
-guía en un conjunto adicional completamente nuevo, incorporar revisión de
-hablantes o especialistas en qom y registrar de forma más sistemática ejemplos
-típicos de error para cada categoría. También sería útil comparar BLEU y
-BERTScore con alguna métrica adicional orientada a lenguas de bajos recursos, como
-chrF o COMET, para ver si capturan mejor ciertos errores. En conjunto, el trabajo
-nos deja la impresión de que evaluar traducción en este escenario requiere combinar
-guías simples, análisis cualitativo y métricas automáticas, sin confiar demasiado
-en una sola fuente de evidencia.

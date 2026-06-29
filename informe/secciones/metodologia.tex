@@ -3,45 +3,39 @@
 
 \subsection{Datos}
 \label{sec:metodologia-datos}
-Trabajamos con datos del corpus paralelo qom--español QomL'aqtaqa
-\citep{cotik2026qomlaqtaqa}. Cada ítem consiste en un segmento en qom acompañado
+Cada ítem del corpus QomL'aqtaqa consiste en un segmento en qom acompañado
 de (i)~una traducción de referencia al español validada y (ii)~una traducción al
 español generada automáticamente por un sistema de MT. Los segmentos pueden ser
 oraciones completas, fragmentos de oraciones o párrafos cortos. Se utilizaron tres
-conjuntos: el \textbf{conjunto~A} (15 traducciones evaluadas por todos los
-integrantes), el \textbf{conjunto~B} (15 traducciones, usado para probar y refinar
-la guía de anotación) y el \textbf{conjunto~C} (50 traducciones por anotador, de
+datasets: el \textbf{dataset~A} (15 traducciones evaluadas por todos los
+integrantes), el \textbf{dataset~B} (15 traducciones, usado para probar y refinar
+la guía de anotación) y el \textbf{dataset~C} (50 traducciones por anotador, de
 las cuales 15 fueron anotadas por todos los integrantes para el cálculo de IAA).
 
 \subsection{Procedimiento de anotación}
 \label{sec:metodologia-anotacion}
 
-\paragraph{Anotación inicial (conjunto A).}
+\paragraph{Anotación inicial (dataset A).}
 Cada integrante del grupo evaluó de forma independiente las 15 traducciones
-automáticas del conjunto~A, asignando a cada una una de tres categorías de
+automáticas del dataset~A, asignando a cada una una de tres categorías de
 calidad: \emph{Correcta}, \emph{Parcialmente correcta} o \emph{Incorrecta}. Esta
-escala de tres niveles se aplicó sin ningún acuerdo o guía, registrando además
-comentarios opcionales que justificaban la decisión o señalaban dificultades
-encontradas durante la evaluación. La anotación se realizó en una planilla de
-cálculo compartida con columnas independientes por anotador, comparando la
+escala de tres niveles se aplicó sin ninguna guía común, comparando la
 traducción automática contra la traducción de referencia en español.
 
-\paragraph{Anotación con criterio propio (conjunto B y re-anotación de A).}
+\paragraph{Anotación con criterio propio (dataset B y re-anotación de A).}
 En una segunda etapa, a partir de la lectura de MQM \citep{lommel2014mqm} armamos
 nuestra propia guía de anotación, descrita en la
-Sección~\ref{sec:metodologia-guia}. Usamos esa guía para anotar el conjunto~B y,
-además, para volver a anotar el conjunto~A. De este modo el conjunto~A quedó
-anotado dos veces: primero con las tres etiquetas sin guía y luego con nuestro
-criterio, lo que nos permite comparar el acuerdo entre anotadores con y sin guía.
-Cada anotador registró el tiempo que le insumió la anotación.
+Sección~\ref{sec:metodologia-guia}. Usamos esa guía para anotar el dataset~B y,
+además, para volver a anotar el dataset~A. De este modo el dataset~A quedó
+anotado dos veces, lo que nos permite comparar el acuerdo entre anotadores con y sin guía.
 
-\paragraph{Anotación del conjunto C con criterio externo (Grupo 5).}
-Finalmente, el conjunto~C (50 segmentos por anotador) se anotó usando el criterio
+\paragraph{Anotación del dataset C con criterio externo (Grupo 5).}
+Finalmente, el dataset~C (50 segmentos por anotador) se anotó usando el criterio
 de anotación elaborado por el \textbf{Grupo 5}, que recibimos como parte del
 intercambio entre grupos. Ese criterio define dos dimensiones, \emph{Precisión} y
 \emph{Fluidez}, sobre una escala continua de 0 a 20 al estilo \emph{Direct
-Assessment} \citep{graham2013da}, con anclas semánticas en los valores
-$\{0,5,10,15,20\}$. De los 50 segmentos, 15 fueron anotados por todos los
+Assessment} \citep{graham2013da}, con rangos en los valores
+$\{0,5,10,15,20\}$ que tratamos como ordinal. De los 50 segmentos, 15 fueron anotados por todos los
 integrantes para poder calcular el IAA. Cada anotador registró el tiempo total que
 le llevó anotar los 50 segmentos.
 
@@ -64,10 +58,10 @@ aplicar, así que elegimos tres dimensiones, cada una con una escala de 1 a 4
 \end{itemize}
 
 \paragraph{Ajuste y anotación.}
-Primero anotamos el conjunto~B con esta guía, que en un principio solo tenía las
+Primero anotamos el dataset~B con esta guía, que en un principio solo tenía las
 tres dimensiones. Al hacerlo notamos que, para poder comparar después con las
 etiquetas (Correcta, Incorrecta, Parcialmente correcta) ya asignadas al
-conjunto~A, nos faltaba una categoría equivalente. Por eso ajustamos la guía
+dataset~A, nos faltaba una categoría equivalente. Por eso ajustamos la guía
 agregando una \emph{etiqueta global} de tres categorías derivada de las tres
 dimensiones, según la siguiente regla:
 
@@ -82,22 +76,20 @@ dimensiones, según la siguiente regla:
 \noindent Le dimos mayor prioridad a la Fidelidad puesto que un error de
 significado es más grave que uno de naturalidad: un segmento con Fidelidad baja se
 penaliza aunque las demás dimensiones sean altas. Con esta versión final
-re-anotamos el conjunto~A; la etiqueta global del conjunto~B se obtuvo aplicando la
+re-anotamos el dataset~A; la etiqueta global del dataset~B se obtuvo aplicando la
 misma regla a las dimensiones ya puntuadas.
 
 \subsection{Métricas seleccionadas}
 \label{sec:metodologia-metricas}
-Para evaluar el sistema de MT sobre el conjunto~C usamos dos métricas:
+Para evaluar el sistema de MT sobre el dataset~C usamos dos métricas:
 \textbf{BLEU} y \textbf{BERTScore}. Las dos comparan la traducción automática con
 la de referencia, pero de forma distinta: BLEU mira si coinciden las palabras y
-BERTScore mira si coinciden los significados. Las combinamos para tener las dos
-miradas. Acá explicamos cada una y por qué la elegimos; los valores obtenidos se
-reportan en la Sección~\ref{sec:res-metricas}.
+BERTScore mira si coinciden los significados. A continuación, explicamos cada una:
 
 \paragraph{BLEU.}
 BLEU \citep{papineni2002bleu} cuenta cuántas palabras y grupos de palabras (de 1 a
 4) aparecen tanto en la traducción automática como en la de referencia. Cuantas
-más coincidan, más alto es el puntaje (de 0 a 100); además baja la nota si la
+más coincidan, más alto es el puntaje (de 0 a 100). Además, baja la nota si la
 traducción es demasiado corta. La elegimos porque es la métrica más usada en
 traducción automática, es fácil y rápida de calcular y no necesita modelos
 entrenados. La calculamos con sacreBLEU \citep{post2018call} (tokenizador
@@ -105,28 +97,28 @@ entrenados. La calculamos con sacreBLEU \citep{post2018call} (tokenizador
 
 \paragraph{BERTScore.}
 BERTScore \citep{zhang2020bertscore} no busca palabras idénticas, sino palabras que
-\emph{significan} lo mismo. Para eso usa un modelo de lenguaje (tipo BERT) que
+significan lo mismo. Para eso usa un modelo de lenguaje (tipo BERT) que
 convierte cada palabra en un vector y compara qué tan parecidos son los de la
 traducción y los de la referencia. Así reconoce sinónimos y reformulaciones que
-BLEU pasa por alto. La elegimos para complementar a BLEU. Como traducimos
+BLEU pasa por alto, por lo que la complementa. Como traducimos
 qom$\rightarrow$español, el texto que evaluamos está en español, así que usamos el
 modelo multilingüe \texttt{bert-base-multilingual-cased} (\texttt{lang=es}) con
 reescalado respecto de la línea base oficial, que hace los valores más
-interpretables; se promedia a nivel de oración (no tiene variante de corpus).
+interpretables, y se promedia a nivel de oración (no tiene variante de corpus).
 
 \paragraph{Ventajas y limitaciones para una lengua de bajos recursos.}
 Algo importante de nuestro trabajo es que la traducción va de qom a español, así
-que las métricas trabajan sobre el \emph{español}, no sobre el qom. Esto es una
+que las métricas trabajan sobre el español, no sobre el qom. Esto es una
 ventaja frente al caso contrario que estudia AmericasNLP \citep{degibert2025findings},
 donde el texto a evaluar está en la lengua indígena y faltan modelos y
-herramientas. Aun así, hay límites: \textbf{(i)}~las métricas no miran el qom
+herramientas. Aún así, hay límites: \textbf{(i)}~las métricas no miran el qom
 original, solo comparan el español generado con una única referencia, así que no se
 dan cuenta si se perdió o cambió el sentido del texto de partida; una traducción
-que suena bien pero dice otra cosa puede igual sacar buena nota.
+que suena bien pero dice otra cosa puede tener el mismo puntaje.
 \textbf{(ii)}~BLEU castiga cuando se usan otras palabras válidas (sinónimos, otro
 orden, otra conjugación); por eso en lenguas de bajos recursos se suele preferir
 chrF \citep{popovic2015chrf}. BERTScore tolera mejor esto, pero depende de qué tan
-bueno sea el modelo que usa. \textbf{(iii)}~el conjunto de evaluación es chico y
+bueno sea el modelo que usa. \textbf{(iii)}~el dataset de evaluación es chico y
 tiene una sola referencia, así que los puntajes son poco estables. Por eso tomamos
 estas métricas como una pista aproximada y las comparamos con la evaluación humana.
 
@@ -135,13 +127,13 @@ estas métricas como una pista aproximada y las comparamos con la evaluación hu
 Documentamos quiénes hicimos la anotación, ya que nuestro perfil influye en los
 juicios de calidad. Somos tres estudiantes argentinos de Ciencia de Datos, de
 alrededor de 22 años, hablantes nativos de español y sin conocimiento de qom, con
-poca experiencia previa en anotación. Los tres anotamos todos los conjuntos. Una
+poca experiencia previa en anotación. Los tres anotamos todos los datasets. Una
 consecuencia directa es que no pudimos juzgar la fidelidad contra el qom de origen,
 sino solo contra la traducción de referencia en español.
 
-El criterio usado para anotar el conjunto~C fue elaborado por el \textbf{Grupo 5}.
-% TODO: completar la composición del Grupo 5 (cantidad de integrantes, formación,
-% lengua materna, experiencia), a partir de los datos que ellos provean.
+El criterio usado para anotar el dataset~C fue elaborado por el \textbf{Grupo 5}
+(véase el Apéndice~\ref{ap:grupo5}, que enlaza su criterio de anotación junto con
+sus \emph{data statements}).
 
 \subsection{Detalles técnicos e implementación del IAA}
 \label{sec:metodologia-tecnico}
@@ -149,8 +141,9 @@ Para medir el acuerdo entre anotadores usamos el Alpha de Krippendorff
 \citep{krippendorff2018}, apropiado cuando hay varios anotadores y una escala
 ordinal, mediante la librería \texttt{krippendorff} de Python. Lo calculamos sobre
 la etiqueta global de tres categorías y sobre cada dimensión de la guía, además del
-conjunto~C con la escala del Grupo 5. Complementariamente reportamos cuántos
+dataset~C con la escala del Grupo 5. Además, reportamos cuántos
 segmentos tuvieron acuerdo total (3/3), acuerdo de la mayoría (2/3) o desacuerdo
-completo, junto con la matriz de confusión entre anotadores. No unificamos las
+completo, junto con la matriz de confusión entre anotadores (se construyeron como matrices de coincidencia agregando los tres pares
+de anotadores de cada ítem). No unificamos las
 anotaciones en una sola etiqueta: las diferencias se reportan tal cual, ya que son
 justamente lo que nos interesa analizar.

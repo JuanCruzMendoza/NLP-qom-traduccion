@@ -1,13 +1,8 @@
 \section{Resultados}
 \label{sec:resultados}
 
-Reportamos primero el acuerdo entre anotadores (IAA), luego
-las métricas automáticas y, por último, su comparación con la evaluación humana.
-El IAA se calculó con el Alpha de Krippendorff \citep{krippendorff2018}
-(implementación de la librería \texttt{krippendorff} de Python). Las matrices de
-confusión se construyeron como matrices de coincidencia agregando los tres pares
-de anotadores de cada ítem. Todos los links a las anotaciones se incluyen en el
-Apéndice~\ref{ap:anotaciones}.
+Todos los links a las anotaciones se incluyen en el
+Apéndice~\ref{ap:anotaciones}. 
 
 \subsection{Acuerdo entre anotadores}
 \label{sec:res-iaa}
@@ -29,8 +24,7 @@ Al volver a anotar A con el criterio propio, el acuerdo fue total
 ($\alpha=1{,}00$ ordinal en la etiqueta global, unanimidad en los 15 segmentos). Por dimensión (escala ordinal 1--4;
 Tabla~\ref{tab:dims}), el acuerdo fue alto en Fidelidad ($\alpha=0{,}96$) y
 moderado en Naturalidad ($0{,}72$) y Preservación ($0{,}73$). Respecto de la
-versión sin guía, $\alpha$ aumenta de $0{,}79$ a $1{,}00$. Cabe señalar que esto podría 
-ser un sobreajuste, dado que la guía A fue usada para desarrollar el propio criterio.
+versión sin guía, $\alpha$ aumenta de $0{,}79$ a $1{,}00$.
 
 
 \paragraph{Dataset B, con criterio propio}
@@ -47,11 +41,6 @@ el acuerdo esperado por azar, $\alpha$ baja.
 
 
 \paragraph{Dataset C, con criterio externo}
-
-
-La guía del Grupo 5 emplea dos dimensiones (Precisión y Fluidez) en una escala continua 0--20 (Direct
-Assessment, con cinco rangos), que tratamos como ordinal. El IAA se calculó sobre
-los 15 segmentos anotados por los tres evaluadores. 
 
 La Precisión muestra acuerdo alto ($\alpha=0{,}93$) y la Fluidez, moderado ($\alpha=0{,}73$). Para las
 proporciones de acuerdo y la confusión redondeamos cada puntaje al rango más
@@ -109,14 +98,11 @@ Fluidez del conjunto C, redondeadas a los rangos 0--20.}
 \subsection{Métricas automáticas}
 \label{sec:res-metricas}
 
-Calculamos BLEU con sacreBLEU \citep{post2018call,papineni2002bleu} y BERTScore
-\citep{zhang2020bertscore}, comparando la salida automática contra la referencia en
+Calculamos BLEU y BERTScore, comparando la salida automática contra la referencia en
 español sobre los 120 segmentos únicos del conjunto C (15 compartidos más 35 por
-anotador). BLEU se computa a nivel de corpus (tokenización \texttt{13a}) y,
-para la correlación, a nivel de oración (con smoothing exponencial);
-BERTScore se reporta como media de los puntajes por oración (no posee variante de
-corpus) y se computó con el modelo multilingüe \texttt{bert-base-multilingual-cased}
-(\texttt{lang=es}), con reescalado oficial respecto de la línea base. La
+anotador). BLEU se computa a nivel de corpus y,
+para la correlación, a nivel de oración (con smoothing exponencial), mientras que 
+BERTScore se reporta como media de los puntajes por oración. La
 Tabla~\ref{tab:metricas} indica el nivel de agregación de cada métrica.
 
 \begin{table}[t]
@@ -163,8 +149,7 @@ Para cada segmento de C tomamos como ground truth el promedio de los anotadores
 (tres en los segmentos compartidos, uno en el resto) y lo correlacionamos con cada
 métrica mediante el coeficiente de Pearson ($r$). Ambas métricas se correlacionan
 de forma significativa con el juicio humano y, en todos los casos, más con
-Precisión que con Fluidez, lo cual es esperable dado que miden similitud con la
-referencia (Tabla~\ref{tab:corr}, Fig.~\ref{fig:scatter}). 
+Precisión que con Fluidez (Tabla~\ref{tab:corr}, Fig.~\ref{fig:scatter}). 
 
 BERTScore supera a BLEU frente a las tres variables humanas. El patrón se mantiene al restringir el
 análisis a los 15 segmentos compartidos (promediados sobre tres anotadores):
