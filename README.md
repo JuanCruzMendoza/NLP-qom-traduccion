@@ -1,7 +1,6 @@
-# Análisis de resultados — Temas de NLP (Grupo 6)
+# Análisis de resultados
 
-Trabajo práctico de **Temas de Procesamiento del Lenguaje Natural** (UBA, FCEN —
-Grupo 6). Evaluamos la calidad de la traducción automática **qom→español**, una
+Evaluamos la calidad de la traducción automática **qom→español**, una
 lengua indígena de bajos recursos, sobre el corpus QomL'aqtaqa, contrastando la
 evaluación humana con las métricas automáticas. El trabajo abarcó la anotación
 manual de la calidad de las traducciones por los tres integrantes, la medición del
