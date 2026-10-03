@@ -7,7 +7,7 @@ manual de la calidad de las traducciones por los tres integrantes, la medición 
 acuerdo entre anotadores (IAA, Alpha de Krippendorff), el diseño y refinamiento de
 una guía de anotación propia, el cálculo de métricas automáticas (BLEU y
 BERTScore) y el análisis de su correlación con los juicios humanos. El informe está
-en `informe/` y el código que reproduce los números, en `scripts/`.
+en [informe](informe/main.pdf) y el código que reproduce los números, en `scripts/`.
 
 Reproduce el IAA, las métricas automáticas y la comparación humano–métrica del
 conjunto de datasets anotados (`../datasets_anotados/`).
